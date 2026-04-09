@@ -80,8 +80,8 @@
     'textarea:not([disabled])',
     '[tabindex]:not([tabindex="-1"])'
   ].join(",");
-  let activeTheme = normalizeTheme(readStored(THEME_STORAGE_KEY) || doc.getAttribute("data-theme"));
-  let activeLang = normalizeLang(readStored(LANG_STORAGE_KEY) || doc.lang || "en");
+  let activeTheme = normalizeTheme(readQueryParam("theme") || readStored(THEME_STORAGE_KEY) || doc.getAttribute("data-theme"));
+  let activeLang = normalizeLang(readQueryParam("lang") || readStored(LANG_STORAGE_KEY) || doc.lang || "en");
   let activeLocale = {};
   let activeExample = "whatsapp";
   let localeRequestId = 0;
@@ -105,6 +105,15 @@
     try {
       localStorage.setItem(key, value);
     } catch (error) {
+    }
+  }
+
+  function readQueryParam(key) {
+    try {
+      const url = new URL(window.location.href);
+      return url.searchParams.get(key);
+    } catch (error) {
+      return null;
     }
   }
 
@@ -164,17 +173,45 @@
     return el.dataset[datasetKey];
   }
 
-  function fetchLocale(lang) {
-    const path = LOCALE_PATHS[lang] || ("./locales/" + lang + ".json");
-    return fetch(path + "?v=" + encodeURIComponent(LOCALE_VERSION), {
-      cache: "force-cache",
-      credentials: "same-origin"
-    }).then((response) => {
-      if (!response.ok) {
-        throw new Error("Unable to load locale");
+  function appendVersion(url) {
+    return url + (url.indexOf("?") >= 0 ? "&" : "?") + "v=" + encodeURIComponent(LOCALE_VERSION);
+  }
+
+  function buildLocaleCandidates(lang) {
+    const configuredPath = LOCALE_PATHS[lang] || ("./locales/" + lang + ".json");
+    const candidates = [configuredPath, "./locales/" + lang + ".json", "/locales/" + lang + ".json"];
+
+    return Array.from(new Set(candidates.map((candidate) => {
+      try {
+        return new URL(candidate, window.location.href).toString();
+      } catch (error) {
+        return candidate;
       }
-      return response.json();
-    });
+    })));
+  }
+
+  async function fetchLocale(lang) {
+    const candidates = buildLocaleCandidates(lang);
+    let lastError = new Error("Unable to load locale");
+
+    for (const candidate of candidates) {
+      try {
+        const response = await fetch(appendVersion(candidate), {
+          cache: "default",
+          credentials: "same-origin"
+        });
+
+        if (!response.ok) {
+          throw new Error("Unable to load locale");
+        }
+
+        return await response.json();
+      } catch (error) {
+        lastError = error;
+      }
+    }
+
+    throw lastError;
   }
 
   async function loadLocale(lang) {
@@ -197,24 +234,19 @@
     }
 
     const cachedLocale = parseCachedLocale(readStored(localeStorageKey(lang)));
-    if (cachedLocale) {
-      localeCache.set(lang, cachedLocale);
-      window.setTimeout(() => {
-        fetchLocale(lang)
-          .then((freshLocale) => {
-            localeCache.set(lang, freshLocale);
-            writeStored(localeStorageKey(lang), JSON.stringify(freshLocale));
-          })
-          .catch(() => {});
-      }, 600);
-      return cachedLocale;
-    }
 
     const localePromise = fetchLocale(lang)
       .then((locale) => {
         localeCache.set(lang, locale);
         writeStored(localeStorageKey(lang), JSON.stringify(locale));
         return locale;
+      })
+      .catch((error) => {
+        if (cachedLocale) {
+          localeCache.set(lang, cachedLocale);
+          return cachedLocale;
+        }
+        throw error;
       })
       .finally(() => {
         localePromiseCache.delete(lang);
