@@ -265,6 +265,7 @@
     "legalEntityLabel": "Entitate juridică",
     "businessAddressLabel": "Adresa companiei",
     "emailLabel": "Email",
+    "legalContactsLabel": "Contacte legale",
     "socialLabel": "Social media și canale",
     "teamRole": "Co-fondator",
     "formLabel": "Spune-ne ce ai nevoie",
@@ -327,6 +328,7 @@
       "websiteLabel": "Website",
       "privacyEmailLabel": "Contact pentru confidențialitate",
       "legalEmailLabel": "Contact legal",
+      "legalContactsLabel": "Contacte legale",
       "addressLabel": "Adresă înregistrată",
       "governingLawLabel": "Lege aplicabilă"
     }
