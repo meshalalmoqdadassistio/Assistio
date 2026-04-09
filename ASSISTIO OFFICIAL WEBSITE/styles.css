@@ -727,6 +727,15 @@ html[data-theme="dark"] .plan-badge {
   font-size: 1.04rem;
 }
 
+.footer-operator-line {
+  margin: 14px 0 0;
+  color: rgba(238, 246, 255, 0.82);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  max-width: 62ch;
+  overflow-wrap: anywhere;
+}
+
 .section-heading .section-lead {
   width: min(100%, 92ch);
   max-width: none;
@@ -1385,6 +1394,35 @@ html[data-theme="dark"] .conversation-window {
   background: rgba(255, 255, 255, 0.03);
 }
 
+.mini-legal-details {
+  display: grid;
+  gap: 14px;
+  margin: 18px 0 0;
+}
+
+.mini-legal-details div {
+  display: grid;
+  gap: 4px;
+}
+
+.mini-legal-details dt {
+  color: var(--text-soft);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.mini-legal-details dd {
+  margin: 0;
+  color: var(--text-main);
+  overflow-wrap: anywhere;
+}
+
+.mini-legal-details a {
+  overflow-wrap: anywhere;
+}
+
 .team-name {
   font-size: 1rem;
 }
@@ -1622,6 +1660,15 @@ textarea {
 
 .legal-hero .legal-lead {
   max-width: 82ch;
+}
+
+.legal-entity-statement {
+  width: min(100%, 92ch);
+  margin: 14px auto 0;
+  color: var(--text-main);
+  font-size: 1rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
 }
 
 .legal-hero .legal-summary-grid {
@@ -1864,6 +1911,8 @@ html[dir="rtl"] .contact-intro {
 .footer-bottom {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 18px;
   padding: 18px 4px 0;
   color: var(--text-soft);
