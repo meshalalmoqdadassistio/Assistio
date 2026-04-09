@@ -257,6 +257,14 @@
       "title": "Ajungi la echipa din spatele rollout-ului",
       "copy": "Pentru întrebări comerciale, planificare de livrare sau follow-up legal, poți contacta direct echipa Assistio."
     },
+    "card3": {
+      "label": "Informații legale",
+      "title": "Informații legale",
+      "copyPrefix": "Assistio este un produs și serviciu operat de"
+    },
+    "legalEntityLabel": "Entitate juridică",
+    "businessAddressLabel": "Adresa companiei",
+    "emailLabel": "Email",
     "socialLabel": "Social media și canale",
     "teamRole": "Co-fondator",
     "formLabel": "Spune-ne ce ai nevoie",
@@ -287,6 +295,7 @@
   "footer": {
     "tag": "Automatizare AI premium pentru conversații mai rapide și handoff-uri mai curate.",
     "copy": "Assistio ajută echipele orientate spre venit să automatizeze răspunsul, calificarea și booking-ul pe cele mai importante canale inbound.",
+    "operatorPrefix": "Assistio este operat de",
     "navTitle": "Navigație",
     "legalTitle": "Legal",
     "contactTitle": "Contact",
@@ -326,6 +335,8 @@
     "eyebrow": "Politica de confidențialitate",
     "title": "Politica de confidențialitate",
     "lead": "Această Politică de confidențialitate explică modul în care Assistio colectează, folosește, stochează și partajează informații atunci când vizitezi website-ul nostru, ceri informații, programezi un demo, discuți cu noi în chat sau interacționezi în alt mod cu serviciile noastre.",
+    "operatorSectionTitle": "Identificarea companiei",
+    "operatorStatementPrefix": "Acest serviciu este operat de",
     "section1": {
       "title": "1. Domeniul de aplicare al acestei Politici",
       "p1": "Această Politică se aplică informațiilor colectate prin website-ul Assistio, formularele de contact, fluxurile de booking, comunicările prin email, interacțiunile de suport, chatul live Chatwoot, comunicările asistate de AI și alte schimburi de pre-sales sau de servicii legate de operațiunile website-ului nostru.",
@@ -386,10 +397,10 @@
     },
     "section8": {
       "title": "8. Partajare și furnizori terți",
-      "p1": "Nu vindem date personale. Putem partaja informații cu furnizori de încredere doar atunci când este necesar pentru operarea website-ului, livrarea serviciilor, răspunsul la solicitări sau respectarea obligațiilor legale.",
+      "p1": "Nu vindem date personale. Putem partaja informații cu furnizori de încredere precum OpenAI, Chatwoot, Stripe, Google Calendar, parteneri de hosting, instrumente de analytics și procesoare de formulare doar atunci când este necesar pentru operarea website-ului, livrarea serviciilor, răspunsul la solicitări sau respectarea obligațiilor legale.",
       "item1": "Furnizori de hosting, infrastructură și securitate.",
       "item2": "Furnizori de booking și programare, precum fluxurile Google Calendar.",
-      "item3": "Furnizori de comunicare, email, CRM sau suport, precum Chatwoot și instrumentele de procesare a formularelor.",
+      "item3": "Furnizori de comunicare, AI, email, CRM, plăți sau suport, precum OpenAI, Chatwoot, Stripe și instrumentele de procesare a formularelor.",
       "item4": "Instrumente de analytics sau performanță folosite pentru a înțelege comportamentul pe site și a îmbunătăți calitatea serviciului.",
       "item5": "Consilieri profesioniști, furnizori de plăți sau contrapărți comerciale atunci când este rezonabil necesar.",
       "item6": "Instanțe, autorități de reglementare, organe de aplicare a legii sau alte părți atunci când divulgarea este necesară sau rezonabilă pentru protejarea drepturilor, siguranței sau conformității legale."
@@ -444,6 +455,8 @@
     "eyebrow": "Termeni și condiții",
     "title": "Termeni și condiții",
     "lead": "Acești Termeni și condiții guvernează utilizarea website-ului Assistio și a serviciilor conexe de pre-sales, contact, booking și informare. Dacă ulterior închei un acord scris separat cu Assistio, acel acord poate suplimenta sau înlocui acești termeni ai website-ului pentru serviciile acoperite.",
+    "providerSectionTitle": "Furnizorul serviciului",
+    "operatorStatementPrefix": "Assistio este operat de",
     "section1": {
       "title": "1. Acceptarea acestor Termeni",
       "p1": "Prin accesarea sau utilizarea website-ului Assistio, prin trimiterea unui formular, programarea unui demo, inițierea unui chat sau orice altă interacțiune cu serviciile publice ale website-ului nostru, accepți acești Termeni și condiții.",
@@ -474,7 +487,7 @@
     },
     "section6": {
       "title": "6. Instrumente și integrări terțe",
-      "p1": "Website-ul poate utiliza sau face trimitere la servicii terțe precum Google Calendar, Chatwoot, procesoare de formulare, instrumente de analytics sau platforme de comunicare. Utilizarea acestor servicii poate fi, la rândul ei, guvernată de termenii și politicile lor proprii.",
+      "p1": "Website-ul poate utiliza sau face trimitere la servicii terțe precum Google Calendar, Chatwoot, OpenAI, Stripe, procesoare de formulare, instrumente de analytics sau platforme de comunicare. Utilizarea acestor servicii poate fi, la rândul ei, guvernată de termenii și politicile lor proprii.",
       "p2": "Assistio nu este responsabilă pentru actele independente, întreruperile, politicile sau practicile de securitate ale furnizorilor terți, cu excepția cazului în care legea aplicabilă sau un acord scris separat cu tine impune altceva."
     },
     "section7": {
