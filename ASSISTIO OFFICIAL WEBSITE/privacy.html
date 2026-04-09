@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n-document-title="meta.privacy.title">Privacy Policy | Assistio</title>
+  <meta
+    name="description"
+    content="Privacy Policy for the Assistio website and related customer communication, booking, contact, and support workflows."
+    data-i18n-content="meta.privacy.description"
+  />
+  <meta name="theme-color" content="#eff5ff" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://ai.assistio.co/assets/og.png" />
+  <meta property="og:url" content="https://ai.assistio.co/privacy.html" />
+  <meta property="og:title" content="Privacy Policy | Assistio" data-i18n-content="meta.privacy.title" />
+  <meta
+    property="og:description"
+    content="Privacy Policy for the Assistio website and related customer communication, booking, contact, and support workflows."
+    data-i18n-content="meta.privacy.description"
+  />
+  <link rel="canonical" href="https://ai.assistio.co/privacy.html" />
+  <link rel="icon" href="./assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    (function () {
+      var doc = document.documentElement;
+      doc.classList.add("site-booting");
+      window.__assistioBootTimeout = window.setTimeout(function () {
+        doc.classList.remove("site-booting");
+      }, 1200);
+      var storedTheme = null;
+      var storedLang = null;
+      var prefersDark = false;
+      var queryTheme = null;
+      var queryLang = null;
+
+      try {
+        var params = new URLSearchParams(window.location.search);
+        queryTheme = params.get("theme");
+        queryLang = params.get("lang");
+        storedTheme = localStorage.getItem("assistio_theme");
+        storedLang = localStorage.getItem("assistio_lang");
+        prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (queryTheme === "light" || queryTheme === "dark") {
+          storedTheme = queryTheme;
+          localStorage.setItem("assistio_theme", queryTheme);
+        }
+        if (queryLang === "en" || queryLang === "ro" || queryLang === "ar") {
+          storedLang = queryLang;
+          localStorage.setItem("assistio_lang", queryLang);
+        }
+      } catch (error) {
+      }
+
+      var theme = storedTheme === "light" || storedTheme === "dark"
+        ? storedTheme
+        : (prefersDark ? "dark" : "light");
+      var browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+      var lang = storedLang === "ro" || storedLang === "ar"
+        ? storedLang
+        : (browserLang.indexOf("ro") === 0 ? "ro" : (browserLang.indexOf("ar") === 0 ? "ar" : "en"));
+
+      doc.setAttribute("data-theme", theme);
+      doc.style.colorScheme = theme;
+      doc.lang = lang;
+      doc.dir = lang === "ar" ? "rtl" : "ltr";
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles.css?v=20260408-22" />
+  <script defer src="./site-config.js?v=20260408-22"></script>
+  <script defer src="./scripts.js?v=20260408-22"></script>
+</head>
+<body data-page="privacy">
+  <a class="skip-link" href="#main" data-i18n="ui.skip">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-shell">
+      <a class="brand" href="./index.html" aria-label="Assistio home">
+        <span class="brand-mark-shell" aria-hidden="true">
+          <img class="brand-mark" src="./assets/logo.png" width="40" height="60" alt="" />
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">Assistio</span>
+          <span class="brand-tag" data-i18n="brand.tag">Revenue-first AI automation for customer conversations</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="ui.navPrimaryLabel">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+          data-nav-toggle
+          data-i18n-aria-label="ui.navOpen"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="nav-panel" data-nav-panel>
+          <div class="nav-panel-intro">
+            <span class="brand-mark-shell nav-panel-mark-shell" aria-hidden="true">
+              <img class="brand-mark" src="./assets/logo.png" width="32" height="48" alt="" />
+            </span>
+            <div class="nav-panel-copy-block">
+              <span class="brand-name">Assistio</span>
+              <p class="nav-panel-copy" data-i18n="brand.tag">Revenue-first AI automation for customer conversations</p>
+            </div>
+          </div>
+
+          <div class="nav-links">
+            <a class="nav-link" href="./index.html#platform" data-i18n="nav.platform">Platform</a>
+            <a class="nav-link" href="./index.html#workflow" data-i18n="nav.workflow">How it works</a>
+            <a class="nav-link" href="./index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+            <a class="nav-link" href="./index.html#faq" data-i18n="nav.faq">FAQ</a>
+            <a class="nav-link" href="./index.html#contact" data-i18n="nav.contact">Contact</a>
+          </div>
+
+          <div class="nav-mobile-stack">
+            <div class="lang-switch" aria-label="Language switcher" data-i18n-aria-label="ui.languageLabel">
+              <button class="lang-button" type="button" data-lang="en">EN</button>
+              <button class="lang-button" type="button" data-lang="ro">RO</button>
+              <button class="lang-button" type="button" data-lang="ar">AR</button>
+            </div>
+
+            <button class="theme-toggle" type="button" data-theme-toggle data-i18n-aria-label="ui.themeToggleToDark">
+              <span class="theme-toggle-track" aria-hidden="true"></span>
+              <span class="theme-toggle-label" data-theme-label></span>
+            </button>
+
+            <div class="nav-mobile-actions">
+              <a class="btn btn-secondary btn-block" href="./index.html#contact" data-i18n="ui.contact">Contact us</a>
+              <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-control-group">
+          <div class="lang-switch desktop-lang-switch" aria-label="Language switcher" data-i18n-aria-label="ui.languageLabel">
+            <button class="lang-button" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="ro">RO</button>
+            <button class="lang-button" type="button" data-lang="ar">AR</button>
+          </div>
+
+          <button class="theme-toggle" type="button" data-theme-toggle data-i18n-aria-label="ui.themeToggleToDark">
+            <span class="theme-toggle-track" aria-hidden="true"></span>
+            <span class="theme-toggle-label" data-theme-label></span>
+          </button>
+        </div>
+        <a class="btn btn-primary header-cta" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+      </div>
+    </div>
+    <div class="nav-overlay" data-nav-overlay hidden></div>
+  </header>
+
+  <main id="main" class="legal-main">
+    <section class="section legal-hero">
+      <div class="container legal-grid">
+        <article class="legal-card" data-reveal>
+          <span class="eyebrow" data-i18n="privacy.eyebrow">Privacy Policy</span>
+          <h1 class="legal-title" data-i18n="privacy.title">Privacy Policy</h1>
+          <p class="legal-lead" data-i18n="privacy.lead">This Privacy Policy explains how Assistio collects, uses, stores, and shares information when you visit our website, request information, book a demo, chat with us, or otherwise interact with our services.</p>
+
+          <div class="legal-summary-grid">
+            <article class="legal-summary-card">
+              <span class="mini-label" data-i18n="legal.summary.operatorLabel">Operator</span>
+              <strong data-company-text="legalEntityName">Assistio</strong>
+            </article>
+            <article class="legal-summary-card">
+              <span class="mini-label" data-i18n="legal.summary.effectiveDateLabel">Effective date</span>
+              <strong data-company-text="effectiveDate">April 7, 2026</strong>
+            </article>
+            <article class="legal-summary-card">
+              <span class="mini-label" data-i18n="legal.summary.websiteLabel">Website</span>
+              <strong data-company-text="siteUrl">https://ai.assistio.co</strong>
+            </article>
+          </div>
+        </article>
+
+        <aside class="legal-aside" data-reveal>
+          <div class="legal-side-card">
+            <span class="mini-label" data-i18n="legal.detailsTitle">Legal details</span>
+            <dl class="legal-details">
+              <div>
+                <dt data-i18n="legal.summary.operatorLabel">Operator</dt>
+                <dd data-company-text="legalEntityName">Assistio</dd>
+              </div>
+              <div>
+                <dt data-i18n="legal.summary.privacyEmailLabel">Privacy contact</dt>
+                <dd><a href="mailto:meshal.almoqdad@assistio.co" data-company-link="privacyEmail">meshal.almoqdad@assistio.co</a></dd>
+              </div>
+              <div>
+                <dt data-i18n="legal.summary.addressLabel">Registered address</dt>
+                <dd data-company-text="registeredAddress">Available upon request.</dd>
+              </div>
+              <div>
+                <dt data-i18n="legal.summary.websiteLabel">Website</dt>
+                <dd><a href="https://ai.assistio.co" target="_blank" rel="noopener noreferrer" data-company-link="siteUrl">https://ai.assistio.co</a></dd>
+              </div>
+            </dl>
+            <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            <a class="btn btn-secondary btn-block" href="./index.html#contact" data-i18n="ui.contact">Contact us</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section legal-content-section">
+      <div class="container legal-content">
+        <article class="legal-card legal-article" data-reveal>
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section1.title">1. Scope of this Policy</h2>
+            <p data-i18n="privacy.section1.p1">This Policy applies to information collected through the Assistio website, contact forms, booking flows, email communications, support interactions, Chatwoot live chat, AI-assisted customer communication, and other pre-sales or service-related exchanges linked to our website operations.</p>
+            <p data-i18n="privacy.section1.p2">If you are a customer under a separate written agreement with Assistio, that agreement may supplement this Policy for service-specific processing. Where terms conflict, the signed agreement controls for the applicable service relationship.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section2.title">2. Information we collect</h2>
+            <p data-i18n="privacy.section2.p1">Depending on how you interact with us, we may collect the following categories of information:</p>
+            <ul>
+              <li data-i18n="privacy.section2.item1">Identity and contact details such as name, job title, company name, email address, phone number, and country.</li>
+              <li data-i18n="privacy.section2.item2">Commercial and inquiry details such as your use case, channels of interest, target workflows, budget signals, scheduling preferences, and messages submitted through forms or email.</li>
+              <li data-i18n="privacy.section2.item3">Booking and scheduling information submitted through Google Calendar or related demo scheduling workflows.</li>
+              <li data-i18n="privacy.section2.item4">Support and communication records, including chat transcripts, follow-up emails, notes, attachments, and operational context needed to answer or route your request.</li>
+              <li data-i18n="privacy.section2.item5">Technical, usage, and device data such as IP address, browser type, operating system, referring pages, approximate location, timestamps, and security or diagnostic logs.</li>
+              <li data-i18n="privacy.section2.item6">Cookie, storage, and preference data such as language, theme, session continuity, and interactions needed to operate the website properly.</li>
+              <li data-i18n="privacy.section2.item7">Any additional information you choose to provide through contact forms, demo requests, chat, or other communications.</li>
+            </ul>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section3.title">3. Sources of information</h2>
+            <p data-i18n="privacy.section3.p1">We collect information directly from you, automatically through your use of the website, and from service providers that support booking, communication, analytics, hosting, or security.</p>
+            <ul>
+              <li data-i18n="privacy.section3.item1">Information you submit through forms, email, chat, demo requests, and support conversations.</li>
+              <li data-i18n="privacy.section3.item2">Information generated when you browse the website, switch language, change theme, or interact with embedded tools.</li>
+              <li data-i18n="privacy.section3.item3">Information created when you book meetings or exchange communications with Assistio team members.</li>
+              <li data-i18n="privacy.section3.item4">Information received from infrastructure, analytics, scheduling, or communication tools acting on our behalf.</li>
+            </ul>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section4.title">4. How we use information</h2>
+            <p data-i18n="privacy.section4.p1">We use personal data only for legitimate business purposes connected to the operation, security, improvement, and delivery of Assistio services.</p>
+            <ul>
+              <li data-i18n="privacy.section4.item1">To operate the website, forms, live chat, language switching, accessibility settings, and essential site functions.</li>
+              <li data-i18n="privacy.section4.item2">To answer inquiries, qualify leads, follow up on contact requests, and schedule or manage demos.</li>
+              <li data-i18n="privacy.section4.item3">To deliver customer support, onboarding assistance, and operational communication.</li>
+              <li data-i18n="privacy.section4.item4">To improve our messaging, workflows, lead qualification, response quality, and service design.</li>
+              <li data-i18n="privacy.section4.item5">To maintain security, detect abuse, troubleshoot incidents, and protect the website and our systems.</li>
+              <li data-i18n="privacy.section4.item6">To comply with legal obligations, resolve disputes, enforce terms, and keep required records.</li>
+              <li data-i18n="privacy.section4.item7">To analyze performance, business demand, and operational trends at an aggregated or account-specific level where appropriate.</li>
+              <li data-i18n="privacy.section4.item8">To train, tune, supervise, or quality-check AI-assisted customer communication workflows in a controlled manner consistent with this Policy and applicable law.</li>
+            </ul>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section5.title">5. Legal bases for processing</h2>
+            <p data-i18n="privacy.section5.p1">Where applicable data protection law requires a legal basis, we typically rely on one or more of the following:</p>
+            <ul>
+              <li data-i18n="privacy.section5.item1">Your consent, for example when you voluntarily submit a form, request a demo, or agree to optional cookies where required.</li>
+              <li data-i18n="privacy.section5.item2">The need to take steps at your request before entering into a contract, including lead qualification, scheduling, and solution scoping.</li>
+              <li data-i18n="privacy.section5.item3">Performance of a contract or service relationship where you become an Assistio customer.</li>
+              <li data-i18n="privacy.section5.item4">Compliance with legal obligations, including accounting, recordkeeping, or lawful request handling.</li>
+              <li data-i18n="privacy.section5.item5">Our legitimate interests in operating, securing, improving, marketing, and supporting the website and related services, provided those interests are not overridden by your rights and freedoms.</li>
+            </ul>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section6.title">6. Cookies and similar technologies</h2>
+            <p data-i18n="privacy.section6.p1">Assistio uses cookies, local storage, and similar technologies to remember language and theme preferences, support chat continuity, maintain security, measure site performance, and improve user experience.</p>
+            <p data-i18n="privacy.section6.p2">Some tools may place their own cookies or storage entries when loaded, including analytics, scheduling, or chat providers. You can usually manage these through browser settings, but disabling them may affect parts of the site.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section7.title">7. Chat, demo booking, and AI-assisted communications</h2>
+            <p data-i18n="privacy.section7.p1">If you use our live chat, booking flow, or AI-assisted support and qualification tools, we may process the contents of those interactions to reply, route requests, improve workflow quality, and maintain service reliability.</p>
+            <ul>
+              <li data-i18n="privacy.section7.item1">Chatwoot or related support tools may process message content, timestamps, browser metadata, and support context.</li>
+              <li data-i18n="privacy.section7.item2">Google Calendar or similar scheduling tools may process meeting preferences, contact details, and calendar booking metadata.</li>
+              <li data-i18n="privacy.section7.item3">AI-assisted flows may help summarize, categorize, or draft responses, but they remain subject to our operational controls and review processes.</li>
+              <li data-i18n="privacy.section7.item4">Please avoid sending sensitive regulated data through general website forms or chat unless specifically requested through a secure process.</li>
+            </ul>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section8.title">8. Sharing and third-party processors</h2>
+            <p data-i18n="privacy.section8.p1">We do not sell personal data. We may share information with trusted providers only when necessary to operate the website, deliver services, respond to requests, or comply with legal obligations.</p>
+            <ul>
+              <li data-i18n="privacy.section8.item1">Hosting, infrastructure, and security providers.</li>
+              <li data-i18n="privacy.section8.item2">Booking and scheduling providers such as Google Calendar workflows.</li>
+              <li data-i18n="privacy.section8.item3">Communication, email, CRM, or support providers such as Chatwoot and form processing tools.</li>
+              <li data-i18n="privacy.section8.item4">Analytics or performance tools used to understand website behavior and improve service quality.</li>
+              <li data-i18n="privacy.section8.item5">Professional advisors, payment providers, or business counterparties where reasonably required.</li>
+              <li data-i18n="privacy.section8.item6">Courts, regulators, law enforcement, or other parties where disclosure is required or reasonably necessary to protect rights, safety, or legal compliance.</li>
+            </ul>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section9.title">9. International data transfers</h2>
+            <p data-i18n="privacy.section9.p1">Assistio may use providers located in different countries from your own. As a result, personal data may be processed internationally, including in countries that may not provide the same level of legal protection as your local jurisdiction.</p>
+            <p data-i18n="privacy.section9.p2">Where required, we take reasonable steps to support lawful transfers, such as relying on contractual safeguards, provider commitments, internal controls, or other mechanisms recognized by applicable law.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section10.title">10. Data retention</h2>
+            <p data-i18n="privacy.section10.p1">We retain personal data only for as long as reasonably necessary for the purposes described in this Policy, including business operations, support, security, legal compliance, and dispute resolution.</p>
+            <ul>
+              <li data-i18n="privacy.section10.item1">Inquiry, demo, and form data may be retained while we evaluate or respond to a potential commercial relationship.</li>
+              <li data-i18n="privacy.section10.item2">Support and communication records may be retained while needed for follow-up, quality assurance, and account history.</li>
+              <li data-i18n="privacy.section10.item3">Security and technical logs may be retained for incident response, fraud prevention, and system reliability.</li>
+              <li data-i18n="privacy.section10.item4">Where retention is no longer justified, we delete, anonymize, or de-identify the data when reasonably practicable.</li>
+            </ul>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section11.title">11. Security</h2>
+            <p data-i18n="privacy.section11.p1">We use reasonable technical, organizational, and administrative measures to protect personal data against unauthorized access, disclosure, alteration, or destruction. No system is perfectly secure, so we cannot guarantee absolute security.</p>
+            <ul>
+              <li data-i18n="privacy.section11.item1">Access controls and role-based handling of internal systems.</li>
+              <li data-i18n="privacy.section11.item2">Provider selection, configuration review, and operational security practices designed to reduce unnecessary exposure.</li>
+              <li data-i18n="privacy.section11.item3">Monitoring, logging, and incident response steps intended to identify and respond to suspicious activity.</li>
+              <li data-i18n="privacy.section11.item4">Reasonable minimization and need-to-know principles when handling website, support, and lead data.</li>
+            </ul>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section12.title">12. Your rights and choices</h2>
+            <p data-i18n="privacy.section12.p1">Depending on your location and applicable law, you may have rights related to your personal data.</p>
+            <ul>
+              <li data-i18n="privacy.section12.item1">Request access to personal data we hold about you.</li>
+              <li data-i18n="privacy.section12.item2">Request correction of inaccurate or incomplete information.</li>
+              <li data-i18n="privacy.section12.item3">Request deletion where retention is no longer required or lawful.</li>
+              <li data-i18n="privacy.section12.item4">Object to or request restriction of certain processing.</li>
+              <li data-i18n="privacy.section12.item5">Withdraw consent where processing depends on consent.</li>
+              <li data-i18n="privacy.section12.item6">Request portability where applicable.</li>
+              <li data-i18n="privacy.section12.item7">Complain to a supervisory authority if you believe your rights have been infringed.</li>
+              <li data-i18n="privacy.section12.item8">Control cookies, local storage, and similar tools through browser settings where technically available.</li>
+            </ul>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section13.title">13. Children</h2>
+            <p data-i18n="privacy.section13.p1">The Assistio website and services are intended for business users and are not directed to children. If you believe a child has provided personal data to us without appropriate authorization, please contact us so we can review and address the issue.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section14.title">14. Changes to this Policy</h2>
+            <p data-i18n="privacy.section14.p1">We may update this Privacy Policy from time to time to reflect legal, operational, technical, or business changes. When we do, we will update the effective date shown on this page and publish the revised version here.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="privacy.section15.title">15. Contact us</h2>
+            <p data-i18n="privacy.section15.p1">For privacy requests, access questions, correction requests, deletion requests, or general privacy concerns, contact Assistio using the details below.</p>
+            <ul class="legal-contact-list">
+              <li class="legal-contact-item">
+                <strong data-i18n="legal.summary.privacyEmailLabel">Privacy contact</strong>
+                <span><a href="mailto:meshal.almoqdad@assistio.co" data-company-link="privacyEmail">meshal.almoqdad@assistio.co</a></span>
+              </li>
+              <li class="legal-contact-item">
+                <strong data-i18n="legal.summary.addressLabel">Registered address</strong>
+                <span data-company-text="registeredAddress">Available upon request.</span>
+              </li>
+              <li class="legal-contact-item">
+                <strong data-i18n="legal.summary.websiteLabel">Website</strong>
+                <span><a href="https://ai.assistio.co" target="_blank" rel="noopener noreferrer" data-company-link="siteUrl">https://ai.assistio.co</a></span>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-branding">
+        <a class="brand brand-footer" href="./index.html" aria-label="Assistio home">
+          <span class="brand-mark-shell brand-mark-shell-footer" aria-hidden="true">
+            <img class="brand-mark" src="./assets/logo.png" width="36" height="54" alt="" />
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Assistio</span>
+            <span class="brand-tag" data-i18n="footer.tag">Premium AI automation for faster conversations and cleaner handoffs.</span>
+          </span>
+        </a>
+        <p class="footer-copy" data-i18n="footer.copy">Assistio helps revenue-focused teams automate response, qualification, and booking across their most important inbound channels.</p>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.navTitle">Navigation</h2>
+        <nav aria-label="Footer navigation" data-i18n-aria-label="ui.footerNavLabel">
+          <a href="./index.html#platform" data-i18n="nav.platform">Platform</a>
+          <a href="./index.html#workflow" data-i18n="nav.workflow">How it works</a>
+          <a href="./index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+          <a href="./index.html#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="./index.html#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.legalTitle">Legal</h2>
+        <nav aria-label="Legal pages" data-i18n-aria-label="ui.footerLegalLabel">
+          <a href="./privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="./terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.contactTitle">Contact</h2>
+        <div class="footer-contact">
+          <a href="mailto:meshal.almoqdad@assistio.co" data-company-link="supportEmail">meshal.almoqdad@assistio.co</a>
+          <a href="tel:+400729501787">+40 0729 501 787</a>
+        </div>
+        <div class="footer-social-shell" data-social-shell>
+          <span class="footer-subtitle" data-i18n="footer.socialTitle">Socials &amp; channels</span>
+          <div class="social-links-list" data-social-links></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year></span> Assistio. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p data-i18n="footer.note">Built for multilingual customer communication, accessibility, and scalable automation.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,9 +1,8 @@
-name: Deploy Assistio Official Website
+name: Deploy GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -16,35 +15,29 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Configure Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Rebuild official website archive
-        shell: bash
+      - name: Prepare site artifact
         run: |
-          mkdir -p build/site
-          cat deploy/site.b64.part* > build/site.b64
-          base64 -d build/site.b64 > build/site.zip
-          unzip -q build/site.zip -d build/site
+          rm -rf _site
+          mkdir -p _site
+          cp -R "ASSISTIO OFFICIAL WEBSITE"/. _site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build/site
+          path: _site
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
