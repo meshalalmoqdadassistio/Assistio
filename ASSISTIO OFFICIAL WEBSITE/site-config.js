@@ -2,7 +2,7 @@ window.ASSISTIO_SITE_CONFIG = Object.freeze({
   siteUrl: "https://ai.assistio.co",
   bookingUrl: "https://calendar.app.google/mF4N138gHQZpTKqc6",
   contactFormEndpoint: "https://formspree.io/f/xqekolgy",
-  localeVersion: "2026-04-08-b",
+  localeVersion: "2026-04-09-c",
   localePaths: Object.freeze({
     en: "./locales/en.json",
     ro: "./locales/ro.json",
