@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n-document-title="meta.home.title">Assistio | AI Customer Conversation Automation for Faster Lead Response</title>
+  <meta
+    name="description"
+    content="Assistio automates WhatsApp, website chat, email, Instagram, and Facebook conversations so your team responds faster, qualifies leads instantly, and routes buyers to booking."
+    data-i18n-content="meta.home.description"
+  />
+  <meta name="theme-color" content="#eff5ff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ai.assistio.co/assets/og.png" />
+  <meta property="og:url" content="https://ai.assistio.co/" />
+  <meta property="og:title" content="Assistio | AI Customer Conversation Automation for Faster Lead Response" data-i18n-content="meta.home.title" />
+  <meta
+    property="og:description"
+    content="Assistio automates WhatsApp, website chat, email, Instagram, and Facebook conversations so your team responds faster, qualifies leads instantly, and routes buyers to booking."
+    data-i18n-content="meta.home.description"
+  />
+  <link rel="canonical" href="https://ai.assistio.co/" />
+  <link rel="icon" href="./assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    (function () {
+      var doc = document.documentElement;
+      doc.classList.add("site-booting");
+      window.__assistioBootTimeout = window.setTimeout(function () {
+        doc.classList.remove("site-booting");
+      }, 1200);
+      var storedTheme = null;
+      var storedLang = null;
+      var prefersDark = false;
+      var queryTheme = null;
+      var queryLang = null;
+
+      try {
+        var params = new URLSearchParams(window.location.search);
+        queryTheme = params.get("theme");
+        queryLang = params.get("lang");
+        storedTheme = localStorage.getItem("assistio_theme");
+        storedLang = localStorage.getItem("assistio_lang");
+        prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (queryTheme === "light" || queryTheme === "dark") {
+          storedTheme = queryTheme;
+          localStorage.setItem("assistio_theme", queryTheme);
+        }
+        if (queryLang === "en" || queryLang === "ro" || queryLang === "ar") {
+          storedLang = queryLang;
+          localStorage.setItem("assistio_lang", queryLang);
+        }
+      } catch (error) {
+      }
+
+      var theme = storedTheme === "light" || storedTheme === "dark"
+        ? storedTheme
+        : (prefersDark ? "dark" : "light");
+      var browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+      var lang = storedLang === "ro" || storedLang === "ar"
+        ? storedLang
+        : (browserLang.indexOf("ro") === 0 ? "ro" : (browserLang.indexOf("ar") === 0 ? "ar" : "en"));
+
+      doc.setAttribute("data-theme", theme);
+      doc.style.colorScheme = theme;
+      doc.lang = lang;
+      doc.dir = lang === "ar" ? "rtl" : "ltr";
+
+      try {
+        if (queryTheme || queryLang) {
+          var nextUrl = new URL(window.location.href);
+          nextUrl.searchParams.delete("theme");
+          nextUrl.searchParams.delete("lang");
+          window.history.replaceState(null, "", nextUrl.toString());
+        }
+      } catch (error) {
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles.css?v=20260409-29" />
+  <script defer src="./site-config.js?v=20260409-29"></script>
+  <script defer src="./scripts.js?v=20260409-29"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main" data-i18n="ui.skip">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-shell">
+      <a class="brand" href="./index.html" aria-label="Assistio home">
+        <span class="brand-mark-shell" aria-hidden="true">
+          <img class="brand-mark" src="./assets/logo.png" width="40" height="60" alt="" />
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">Assistio</span>
+          <span class="brand-tag" data-i18n="brand.tag">Revenue-first AI automation for customer conversations</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="ui.navPrimaryLabel">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+          data-nav-toggle
+          data-i18n-aria-label="ui.navOpen"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="nav-panel" data-nav-panel>
+          <div class="nav-panel-intro">
+            <span class="brand-mark-shell nav-panel-mark-shell" aria-hidden="true">
+              <img class="brand-mark" src="./assets/logo.png" width="32" height="48" alt="" />
+            </span>
+            <div class="nav-panel-copy-block">
+              <span class="brand-name">Assistio</span>
+              <p class="nav-panel-copy" data-i18n="brand.tag">Revenue-first AI automation for customer conversations</p>
+            </div>
+          </div>
+
+          <div class="nav-links">
+            <a class="nav-link" href="#platform" data-nav-link="platform" data-i18n="nav.platform">Platform</a>
+            <a class="nav-link" href="#workflow" data-nav-link="workflow" data-i18n="nav.workflow">How it works</a>
+            <a class="nav-link" href="#pricing" data-nav-link="pricing" data-i18n="nav.pricing">Pricing</a>
+            <a class="nav-link" href="#faq" data-nav-link="faq" data-i18n="nav.faq">FAQ</a>
+            <a class="nav-link" href="#contact" data-nav-link="contact" data-i18n="nav.contact">Contact</a>
+          </div>
+
+          <div class="nav-mobile-stack">
+            <div class="lang-switch" aria-label="Language switcher" data-i18n-aria-label="ui.languageLabel">
+              <button class="lang-button" type="button" data-lang="en">EN</button>
+              <button class="lang-button" type="button" data-lang="ro">RO</button>
+              <button class="lang-button" type="button" data-lang="ar">AR</button>
+            </div>
+
+            <button class="theme-toggle" type="button" data-theme-toggle data-i18n-aria-label="ui.themeToggleToDark">
+              <span class="theme-toggle-track" aria-hidden="true"></span>
+              <span class="theme-toggle-label" data-theme-label></span>
+            </button>
+
+            <div class="nav-mobile-actions">
+              <a class="btn btn-secondary btn-block" href="#contact" data-i18n="ui.contact">Contact us</a>
+              <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-control-group">
+          <div class="lang-switch desktop-lang-switch" aria-label="Language switcher" data-i18n-aria-label="ui.languageLabel">
+            <button class="lang-button" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="ro">RO</button>
+            <button class="lang-button" type="button" data-lang="ar">AR</button>
+          </div>
+
+          <button class="theme-toggle" type="button" data-theme-toggle data-i18n-aria-label="ui.themeToggleToDark">
+            <span class="theme-toggle-track" aria-hidden="true"></span>
+            <span class="theme-toggle-label" data-theme-label></span>
+          </button>
+        </div>
+        <a class="btn btn-primary header-cta" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+      </div>
+    </div>
+    <div class="nav-overlay" data-nav-overlay hidden></div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow" data-i18n="hero.eyebrow">Assistio for high-intent inbound teams</span>
+          <h1 class="hero-title" data-i18n="hero.title">Automate customer conversations without losing the human touch</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Assistio captures inbound demand across WhatsApp, website chat, email, Instagram, and Facebook, qualifies leads instantly, and routes ready buyers to the right next step.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            <a class="btn btn-secondary" href="#platform" data-i18n="ui.explorePlatform">Explore the platform</a>
+          </div>
+
+          <p class="hero-support" data-i18n="hero.support">
+            Launch with routing logic, qualification prompts, escalation rules, and a deployment path tailored to your business.
+          </p>
+
+          <div class="hero-metrics">
+            <article class="metric-card" data-reveal>
+              <span class="metric-label" data-i18n="hero.metric1.label">Speed to first reply</span>
+              <strong class="metric-value" data-i18n="hero.metric1.value">Seconds, not hours</strong>
+              <p class="metric-copy" data-i18n="hero.metric1.copy">Keep high-intent conversations moving while buyers are still ready to act.</p>
+            </article>
+            <article class="metric-card" data-reveal>
+              <span class="metric-label" data-i18n="hero.metric2.label">Qualification depth</span>
+              <strong class="metric-value" data-i18n="hero.metric2.value">Context captured automatically</strong>
+              <p class="metric-copy" data-i18n="hero.metric2.copy">Collect channel, intent, urgency, and booking readiness before a handoff is needed.</p>
+            </article>
+            <article class="metric-card" data-reveal>
+              <span class="metric-label" data-i18n="hero.metric3.label">Operational control</span>
+              <strong class="metric-value" data-i18n="hero.metric3.value">Humans step in only when they should</strong>
+              <p class="metric-copy" data-i18n="hero.metric3.copy">Automate the repetitive path and reserve your team for the moments that truly need them.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="hero-glow" aria-hidden="true"></div>
+          <section class="conversation-shell" aria-label="Assistio product preview">
+            <div class="conversation-header">
+              <div class="conversation-header-copy">
+                <span class="mini-label" data-i18n="hero.previewLabel">Live qualification preview</span>
+                <strong data-i18n="hero.previewTitle">One conversation flow across every high-intent channel</strong>
+              </div>
+              <span class="status-chip" data-i18n="hero.previewStatus">Ready to launch</span>
+            </div>
+
+            <div class="channel-switch" role="group" aria-label="Channel examples" data-i18n-aria-label="hero.channelGroupLabel">
+              <button class="channel-pill is-active" type="button" data-example-tab="whatsapp" data-i18n="hero.tabs.whatsapp" aria-pressed="true">WhatsApp</button>
+              <button class="channel-pill" type="button" data-example-tab="website" data-i18n="hero.tabs.website" aria-pressed="false">Website chat</button>
+              <button class="channel-pill" type="button" data-example-tab="email" data-i18n="hero.tabs.email" aria-pressed="false">Email</button>
+              <button class="channel-pill" type="button" data-example-tab="instagram" data-i18n="hero.tabs.instagram" aria-pressed="false">Instagram</button>
+            </div>
+
+            <div class="conversation-window">
+              <span class="mini-label" data-i18n="hero.incomingLabel">Incoming buyer intent</span>
+              <div class="message message-user" data-example="user">
+                Hi, we keep missing high-intent messages after hours. We need faster replies across WhatsApp and our website.
+              </div>
+              <div class="message message-assistant" data-example="assistant">
+                We can automate that. Do you want qualified leads sent directly to booking, or should Assistio hand them to your team first?
+              </div>
+            </div>
+
+            <div class="conversation-insights">
+              <article class="insight-card">
+                <span class="mini-label" data-i18n="hero.captureLabel">Captured automatically</span>
+                <strong data-example="capture">Need: after-hours lead capture</strong>
+              </article>
+              <article class="insight-card">
+                <span class="mini-label" data-i18n="hero.nextLabel">Next step</span>
+                <strong data-example="next">Route qualified demand to booking</strong>
+              </article>
+            </div>
+
+            <div class="workflow-cards">
+              <article class="workflow-card">
+                <span class="mini-label" data-i18n="hero.workflowStep1Label">Response</span>
+                <p data-example="step1">A message arrives and gets an immediate, on-brand reply.</p>
+              </article>
+              <article class="workflow-card">
+                <span class="mini-label" data-i18n="hero.workflowStep2Label">Qualification</span>
+                <p data-example="step2">Assistio collects the details your team needs before a handoff.</p>
+              </article>
+              <article class="workflow-card">
+                <span class="mini-label" data-i18n="hero.workflowStep3Label">Routing</span>
+                <p data-example="step3">Serious buyers move toward booking or a human conversation without delay.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Assistio channel coverage">
+      <div class="container trust-shell">
+        <p class="trust-copy" data-i18n="trust.lead">Built for the channels your buyers already prefer.</p>
+        <div class="trust-pills">
+          <span class="trust-pill" data-i18n="trust.channel1">WhatsApp</span>
+          <span class="trust-pill" data-i18n="trust.channel2">Website chat</span>
+          <span class="trust-pill" data-i18n="trust.channel3">Instagram</span>
+          <span class="trust-pill" data-i18n="trust.channel4">Email</span>
+          <span class="trust-pill" data-i18n="trust.channel5">Facebook</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="platform" data-section="platform">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="eyebrow" data-i18n="platform.eyebrow">Platform</span>
+          <h2 class="section-title" data-i18n="platform.title">The Assistio platform is built to remove friction before revenue slips away.</h2>
+          <p class="section-lead" data-i18n="platform.lead">
+            Instead of juggling disconnected inboxes, manual qualification, and slow follow-up, your team gets one coordinated system for faster conversations and cleaner handoffs.
+          </p>
+        </div>
+        <div class="platform-grid">
+          <article class="story-panel" data-reveal>
+            <span class="mini-label" data-i18n="platform.storyLabel">What changes in practice</span>
+            <h3 data-i18n="platform.storyTitle">From scattered inbound messages to a structured path that feels premium to the buyer.</h3>
+            <p data-i18n="platform.storyCopy">
+              Assistio creates one operational layer across your key channels so every lead gets a faster reply, consistent qualification, and the right route to booking or human support.
+            </p>
+            <ul class="story-list">
+              <li data-i18n="platform.storyPoint1">Connect your highest-intent channels without rebuilding your entire workflow.</li>
+              <li data-i18n="platform.storyPoint2">Capture the details your sales or operations team actually needs before they step in.</li>
+              <li data-i18n="platform.storyPoint3">Route buyers to demo booking, lead sheets, or human takeover with the context attached.</li>
+            </ul>
+            <div class="story-footer">
+              <strong data-i18n="platform.storyFootTitle">Deployment stays practical.</strong>
+              <p data-i18n="platform.storyFootCopy">We help shape the prompts, decision logic, channel rules, and next-step paths around how your business actually sells.</p>
+            </div>
+          </article>
+
+          <div class="capability-grid">
+            <article class="capability-card" data-reveal>
+              <span class="capability-icon">01</span>
+              <h3 data-i18n="platform.card1.title">Unified channel intake</h3>
+              <p data-i18n="platform.card1.copy">Bring WhatsApp, website chat, Instagram, email, and Facebook into one coordinated response layer.</p>
+            </article>
+            <article class="capability-card" data-reveal>
+              <span class="capability-icon">02</span>
+              <h3 data-i18n="platform.card2.title">Lead qualification logic</h3>
+              <p data-i18n="platform.card2.copy">Ask the right questions automatically so your team sees urgency, fit, and next-step readiness earlier.</p>
+            </article>
+            <article class="capability-card" data-reveal>
+              <span class="capability-icon">03</span>
+              <h3 data-i18n="platform.card3.title">Booking-ready routing</h3>
+              <p data-i18n="platform.card3.copy">Move serious demand directly to your booking path or sales calendar when the conversation is ready.</p>
+            </article>
+            <article class="capability-card" data-reveal>
+              <span class="capability-icon">04</span>
+              <h3 data-i18n="platform.card4.title">Human takeover with context</h3>
+              <p data-i18n="platform.card4.copy">Escalate to a person only when nuance matters, with the conversation history and lead details already organized.</p>
+            </article>
+            <article class="capability-card" data-reveal>
+              <span class="capability-icon">05</span>
+              <h3 data-i18n="platform.card5.title">Operational visibility</h3>
+              <p data-i18n="platform.card5.copy">Track lead flow, channel coverage, and handoff status so the rollout stays measurable and maintainable.</p>
+            </article>
+            <article class="capability-card" data-reveal>
+              <span class="capability-icon">06</span>
+              <h3 data-i18n="platform.card6.title">Multilingual customer experience</h3>
+              <p data-i18n="platform.card6.copy">Keep the experience clear across languages without turning your UI or workflows into a maintenance problem.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contrast" id="workflow" data-section="workflow">
+      <div class="container workflow-shell">
+        <div class="section-heading" data-reveal>
+          <span class="eyebrow" data-i18n="workflow.eyebrow">How it works</span>
+          <h2 class="section-title" data-i18n="workflow.title">A rollout path that stays understandable for your team and frictionless for your buyers.</h2>
+          <p class="section-lead" data-i18n="workflow.lead">
+            Assistio is designed to feel operationally clean from day one: identify the channels that matter, automate the repetitive path, and keep human escalation intentional.
+          </p>
+        </div>
+
+        <div class="workflow-grid">
+          <div class="workflow-copy" data-reveal>
+          <div class="workflow-steps">
+            <article class="step-card" data-reveal>
+              <span class="step-number">01</span>
+              <h3 data-i18n="workflow.step1.title">Map your conversation entry points</h3>
+              <p data-i18n="workflow.step1.copy">We define where high-intent demand enters, what data needs to be captured, and what counts as a qualified next step.</p>
+            </article>
+            <article class="step-card" data-reveal>
+              <span class="step-number">02</span>
+              <h3 data-i18n="workflow.step2.title">Automate the repetitive path</h3>
+              <p data-i18n="workflow.step2.copy">Assistio handles fast replies, qualification prompts, and routing decisions with the tone and logic your team approves.</p>
+            </article>
+            <article class="step-card" data-reveal>
+              <span class="step-number">03</span>
+              <h3 data-i18n="workflow.step3.title">Hand off only when the timing is right</h3>
+              <p data-i18n="workflow.step3.copy">Ready buyers move to booking, while complex conversations reach a human with the right context already attached.</p>
+            </article>
+          </div>
+          </div>
+
+          <aside class="rollout-card" data-reveal>
+            <span class="mini-label" data-i18n="workflow.panelLabel">What the rollout usually includes</span>
+            <h3 data-i18n="workflow.panelTitle">Channel setup, qualification design, booking handoff, and ongoing optimization.</h3>
+            <p data-i18n="workflow.panelCopy">
+              Each rollout is shaped around your revenue flow, team capacity, language needs, and the places where manual response is currently slowing you down.
+            </p>
+            <ul class="rollout-list">
+              <li data-i18n="workflow.panelPoint1">Booking links and demo flows connected where they matter most.</li>
+              <li data-i18n="workflow.panelPoint2">Escalation logic for when a real person should take over.</li>
+              <li data-i18n="workflow.panelPoint3">Localized customer-facing messaging that stays clear across breakpoints and channels.</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing" data-section="pricing">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="eyebrow" data-i18n="pricing.eyebrow">Pricing</span>
+          <h2 class="section-title" data-i18n="pricing.title">Clear plans built to launch cleanly and expand without chaos.</h2>
+          <p class="section-lead" data-i18n="pricing.lead">
+            Every plan is designed around a simple next step: book a working session, confirm the right setup, and move into deployment with clarity.
+          </p>
+        </div>
+
+        <div class="pricing-shell">
+          <div class="pricing-grid">
+            <article class="pricing-card" data-reveal>
+              <div class="plan-head">
+                <span class="plan-badge" data-i18n="pricing.launch.badge">Launch</span>
+                <h3 data-i18n="pricing.launch.name">Launch</h3>
+                <p class="plan-price" data-i18n="pricing.launch.price">EUR 149 / month</p>
+              </div>
+              <p class="plan-setup" data-i18n="pricing.launch.setup">+ EUR 199 one-time setup</p>
+              <ul class="plan-list">
+                <li data-i18n="pricing.launch.feature1">WhatsApp automation</li>
+                <li data-i18n="pricing.launch.feature2">One extra channel: website chat or email</li>
+                <li data-i18n="pricing.launch.feature3">One qualification and routing flow</li>
+                <li data-i18n="pricing.launch.feature4">One active language</li>
+                <li data-i18n="pricing.launch.feature5">Up to three team users</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            </article>
+
+            <article class="pricing-card pricing-card-featured" data-reveal>
+              <div class="plan-head">
+                <span class="plan-badge plan-badge-featured" data-i18n="pricing.growth.badge">Most popular</span>
+                <h3 data-i18n="pricing.growth.name">Growth</h3>
+                <p class="plan-price" data-i18n="pricing.growth.price">EUR 199 / month</p>
+              </div>
+              <p class="plan-setup" data-i18n="pricing.growth.setup">+ EUR 299 one-time setup</p>
+              <ul class="plan-list">
+                <li data-i18n="pricing.growth.feature1">WhatsApp plus two additional channels</li>
+                <li data-i18n="pricing.growth.feature2">Two qualification or routing flows</li>
+                <li data-i18n="pricing.growth.feature3">Lead tracking with reporting handoff</li>
+                <li data-i18n="pricing.growth.feature4">Performance review summary</li>
+                <li data-i18n="pricing.growth.feature5">Up to five team users</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            </article>
+
+            <article class="pricing-card" data-reveal>
+              <div class="plan-head">
+                <span class="plan-badge" data-i18n="pricing.scale.badge">Scale</span>
+                <h3 data-i18n="pricing.scale.name">Scale</h3>
+                <p class="plan-price" data-i18n="pricing.scale.price">EUR 279 / month</p>
+              </div>
+              <p class="plan-setup" data-i18n="pricing.scale.setup">+ EUR 349 one-time setup</p>
+              <ul class="plan-list">
+                <li data-i18n="pricing.scale.feature1">Omnichannel rollout across sales and support touchpoints</li>
+                <li data-i18n="pricing.scale.feature2">Three automation or handoff flows</li>
+                <li data-i18n="pricing.scale.feature3">AI-to-human escalation rules</li>
+                <li data-i18n="pricing.scale.feature4">Two active languages</li>
+                <li data-i18n="pricing.scale.feature5">Up to ten team users</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            </article>
+          </div>
+
+          <p class="pricing-note" data-reveal data-i18n="pricing.note">
+            No commitment is required to book. We use the demo to recommend the right channel mix, qualification logic, and rollout scope for your business.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" data-section="faq">
+      <div class="container faq-shell">
+        <div class="section-heading" data-reveal>
+          <span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span>
+          <h2 class="section-title" data-i18n="faq.title">Questions buyers usually ask before booking a working session.</h2>
+          <p class="section-lead" data-i18n="faq.lead">
+            The goal is simple: make the next step feel clear, low-friction, and operationally realistic for your team.
+          </p>
+        </div>
+
+        <div class="faq-list" data-reveal>
+          <details class="faq-item">
+            <summary data-i18n="faq.q1.question">Which channels can Assistio automate?</summary>
+            <p data-i18n="faq.q1.answer">Assistio can be configured for WhatsApp, website chat, email, Instagram, and Facebook workflows depending on your plan and rollout scope.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q2.question">How long does setup usually take?</summary>
+            <p data-i18n="faq.q2.answer">That depends on your channels, routing logic, and review speed, but the working session is designed to clarify scope quickly so launch can move without unnecessary delay.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q3.question">Can a human still take over a conversation?</summary>
+            <p data-i18n="faq.q3.answer">Yes. Assistio is built to support human takeover when nuance, compliance, or commercial judgment requires a real person.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q4.question">Can Assistio support multiple languages?</summary>
+            <p data-i18n="faq.q4.answer">Yes. The site and product messaging can be structured for multilingual use, and the rollout can be configured around the languages your business actively serves.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q5.question">How do demos and lead details move into our workflow?</summary>
+            <p data-i18n="faq.q5.answer">During rollout we define whether qualified conversations should move to booking, spreadsheets, CRM steps, or a live human handoff based on your operating model.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q6.question">What happens if our process is more custom than the plans suggest?</summary>
+            <p data-i18n="faq.q6.answer">Use the contact form or book a demo. We can review a more tailored setup if your channels, handoff rules, or localization needs go beyond a standard package.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" data-section="contact">
+      <div class="container contact-shell">
+        <div class="contact-intro" data-reveal>
+          <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+          <h2 class="section-title" data-i18n="contact.title">Need a tailored setup, a legal contact, or a faster answer before you book?</h2>
+          <p class="section-lead" data-i18n="contact.lead">
+            Send us the essentials and we will help you choose the right rollout path, channel mix, and next operational step.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cards-column" data-reveal>
+            <div class="contact-cards">
+            <article class="contact-card" data-reveal>
+              <span class="mini-label" data-i18n="contact.card1.label">Fastest route</span>
+              <h3 data-i18n="contact.card1.title">Book a working session</h3>
+              <p data-i18n="contact.card1.copy">Use the live calendar to pick a time and walk through your channels, goals, and rollout constraints with Assistio.</p>
+              <a class="btn btn-secondary" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            </article>
+
+            <article class="contact-card" data-reveal>
+              <span class="mini-label" data-i18n="contact.card2.label">Direct contacts</span>
+              <h3 data-i18n="contact.card2.title">Reach the team behind the rollout</h3>
+              <p data-i18n="contact.card2.copy">For commercial questions, delivery planning, or legal follow-up, you can contact the Assistio team directly.</p>
+              <div class="team-list" data-contact-list></div>
+              <div class="contact-social-shell" data-social-shell>
+                <span class="mini-label" data-i18n="contact.socialLabel">Socials &amp; channels</span>
+                <div class="social-links-list social-links-list-compact" data-social-links></div>
+              </div>
+            </article>
+
+            <article class="contact-card contact-card-legal" data-reveal>
+              <span class="mini-label" data-i18n="contact.card3.label">Legal information</span>
+              <h3 data-i18n="contact.card3.title">Legal information</h3>
+              <p>
+                <span data-i18n="contact.card3.copyPrefix">Assistio is a product and service operated by</span>
+                <span data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</span>.
+              </p>
+              <dl class="mini-legal-details">
+                <div>
+                  <dt data-i18n="contact.legalEntityLabel">Legal Entity</dt>
+                  <dd data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</dd>
+                </div>
+                <div>
+                  <dt data-i18n="contact.businessAddressLabel">Business Address</dt>
+                  <dd data-company-text="registeredAddress">Marzouq Al Otaibi Street, Kazma Commercial Complex, Al Jahra, Kuwait. Address number: 14709176. Civil reference: 2594329.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="contact.emailLabel">Email</dt>
+                  <dd><a href="mailto:info@assistio.co" data-company-link="supportEmail">info@assistio.co</a></dd>
+                </div>
+                <div>
+                  <dt data-i18n="contact.legalContactsLabel">Legal contacts</dt>
+                  <dd class="mini-legal-contact-list">
+                    <a href="mailto:meshal.almoqdad@assistio.co">meshal.almoqdad@assistio.co</a>
+                    <a href="mailto:ali.annamuhammedov@assistio.co">ali.annamuhammedov@assistio.co</a>
+                  </dd>
+                </div>
+              </dl>
+            </article>
+            </div>
+          </div>
+
+          <div class="form-card" data-reveal>
+            <div class="form-head">
+              <span class="mini-label" data-i18n="contact.formLabel">Tell us what you need</span>
+              <h3 data-i18n="contact.formTitle">Share your channels, the bottleneck, and the outcome you want.</h3>
+              <p data-i18n="contact.formCopy">We use this information to recommend the best next step and reply with the most relevant rollout path.</p>
+            </div>
+
+            <form class="contact-form" method="POST" novalidate data-contact-form>
+              <label class="field">
+                <span data-i18n="contact.form.nameLabel">Name</span>
+                <input type="text" name="name" autocomplete="name" required data-i18n-placeholder="contact.form.namePlaceholder" placeholder="Your name" />
+              </label>
+
+              <label class="field">
+                <span data-i18n="contact.form.emailLabel">Work email</span>
+                <input type="email" name="email" autocomplete="email" required data-i18n-placeholder="contact.form.emailPlaceholder" placeholder="you@company.com" />
+              </label>
+
+              <label class="field">
+                <span data-i18n="contact.form.companyLabel">Company</span>
+                <input type="text" name="company" autocomplete="organization" required data-i18n-placeholder="contact.form.companyPlaceholder" placeholder="Company name" />
+              </label>
+
+              <label class="field">
+                <span data-i18n="contact.form.useCaseLabel">Primary goal</span>
+                <select name="use_case" required>
+                  <option value="" data-i18n="contact.form.useCasePlaceholder">Choose a goal</option>
+                  <option value="lead-capture" data-i18n="contact.form.useCaseOption1">Lead capture and faster replies</option>
+                  <option value="booking-automation" data-i18n="contact.form.useCaseOption2">Booking automation</option>
+                  <option value="support-triage" data-i18n="contact.form.useCaseOption3">Support triage and routing</option>
+                  <option value="multichannel" data-i18n="contact.form.useCaseOption4">Multi-channel rollout</option>
+                </select>
+              </label>
+
+              <label class="field field-full">
+                <span data-i18n="contact.form.messageLabel">Project context</span>
+                <textarea
+                  name="message"
+                  rows="5"
+                  required
+                  data-i18n-placeholder="contact.form.messagePlaceholder"
+                  placeholder="Tell us which channels matter, what is slowing response time down, and what a successful rollout needs to achieve."
+                ></textarea>
+              </label>
+
+              <button class="btn btn-primary btn-block" type="submit" data-form-submit data-i18n="contact.form.submit">Send request</button>
+              <p class="form-disclaimer" data-i18n="contact.form.disclaimer">By sending this form, you agree that Assistio may use your details to respond to your request, schedule a demo, and continue related sales or support communication.</p>
+              <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-branding">
+        <a class="brand brand-footer" href="./index.html" aria-label="Assistio home">
+          <span class="brand-mark-shell brand-mark-shell-footer" aria-hidden="true">
+            <img class="brand-mark" src="./assets/logo.png" width="36" height="54" alt="" />
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Assistio</span>
+            <span class="brand-tag" data-i18n="footer.tag">Premium AI automation for faster conversations and cleaner handoffs.</span>
+          </span>
+        </a>
+        <p class="footer-copy" data-i18n="footer.copy">Assistio helps revenue-focused teams automate response, qualification, and booking across their most important inbound channels.</p>
+        <p class="footer-operator-line">
+          <span data-i18n="footer.operatorPrefix">Assistio is operated by</span>
+          <span data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</span>.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.navTitle">Navigation</h2>
+        <nav aria-label="Footer navigation" data-i18n-aria-label="ui.footerNavLabel">
+          <a href="#platform" data-i18n="nav.platform">Platform</a>
+          <a href="#workflow" data-i18n="nav.workflow">How it works</a>
+          <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="./contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.legalTitle">Legal</h2>
+        <nav aria-label="Legal pages" data-i18n-aria-label="ui.footerLegalLabel">
+          <a href="./privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="./terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.contactTitle">Contact</h2>
+        <div class="footer-contact">
+          <a href="mailto:info@assistio.co" data-company-link="supportEmail">info@assistio.co</a>
+          <a href="tel:+400729501787">+40 0729 501 787</a>
+        </div>
+        <div class="footer-social-shell" data-social-shell>
+          <span class="footer-subtitle" data-i18n="footer.socialTitle">Socials &amp; channels</span>
+          <div class="social-links-list" data-social-links></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year></span> Assistio. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p data-i18n="footer.note">Built for multilingual customer communication, accessibility, and scalable automation.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

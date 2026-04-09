@@ -1,0 +1,548 @@
+{
+  "meta": {
+    "home": {
+      "title": "Assistio | Automatizare AI pentru conversații și leaduri mai bine calificate",
+      "description": "Assistio automatizează conversațiile din WhatsApp, chatul de pe site, email, Instagram și Facebook pentru ca echipa ta să răspundă mai rapid, să califice leadurile instant și să trimită cumpărătorii spre programare."
+    },
+    "privacy": {
+      "title": "Politica de confidențialitate | Assistio",
+      "description": "Politica de confidențialitate pentru website-ul Assistio și pentru fluxurile aferente de contact, programare, chat și suport."
+    },
+    "terms": {
+      "title": "Termeni și condiții | Assistio",
+      "description": "Termeni și condiții pentru utilizarea website-ului Assistio, a fluxurilor de contact, a cererilor de demo și a informațiilor despre servicii."
+    },
+    "contact": {
+      "title": "Contact | Assistio",
+      "description": "Contactează Assistio pentru întrebări legale, comerciale și de implementare. Vezi entitatea juridică, adresa companiei și datele oficiale de contact."
+    }
+  },
+  "ui": {
+    "skip": "Sari la conținut",
+    "navPrimaryLabel": "Navigație principală",
+    "navOpen": "Deschide meniul",
+    "navClose": "Închide meniul",
+    "languageLabel": "Selector de limbă",
+    "contact": "Contact",
+    "bookDemo": "Programează demo",
+    "explorePlatform": "Vezi platforma",
+    "themeLight": "Mod luminos",
+    "themeDark": "Mod întunecat",
+    "themeToggleToDark": "Comută în modul întunecat",
+    "themeToggleToLight": "Comută în modul luminos",
+    "footerNavLabel": "Navigație în subsol",
+    "footerLegalLabel": "Pagini legale"
+  },
+  "brand": {
+    "tag": "Automatizare AI orientată spre venit pentru conversațiile cu clienții"
+  },
+  "nav": {
+    "platform": "Platformă",
+    "workflow": "Proces",
+    "pricing": "Prețuri",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Assistio pentru echipe inbound",
+    "title": "Automatizează conversațiile cu clienții fără să pierzi partea umană",
+    "lead": "Assistio captează cererea inbound din WhatsApp, chatul de pe site, email, Instagram și Facebook, califică leadurile instant și direcționează cumpărătorii pregătiți către următorul pas potrivit.",
+    "support": "Lansezi cu logică de rutare, întrebări de calificare, reguli de escaladare și o cale de implementare adaptată afacerii tale.",
+    "metric1": {
+      "label": "Viteză până la primul răspuns",
+      "value": "Secunde, nu ore",
+      "copy": "Păstrezi conversațiile cu intenție mare în mișcare cât timp cumpărătorul este încă pregătit să acționeze."
+    },
+    "metric2": {
+      "label": "Calificare mai profundă",
+      "value": "Context colectat automat",
+      "copy": "Captezi canalul, intenția, urgența și disponibilitatea pentru programare înainte să fie nevoie de handoff."
+    },
+    "metric3": {
+      "label": "Control operațional",
+      "value": "Oamenii intervin doar când trebuie",
+      "copy": "Automatizezi traseul repetitiv și păstrezi echipa pentru momentele care chiar au nevoie de atenție umană."
+    },
+    "previewLabel": "Previzualizare live a calificării",
+    "previewTitle": "Un singur flux de conversație pentru fiecare canal cu intenție mare",
+    "previewStatus": "Gata de lansare",
+    "channelGroupLabel": "Exemple de canale",
+    "tabs": {
+      "website": "Chat pe site"
+    },
+    "incomingLabel": "Intenție de cumpărare la intrare",
+    "captureLabel": "Captat automat",
+    "nextLabel": "Pasul următor",
+    "workflowStep1Label": "Răspuns",
+    "workflowStep2Label": "Calificare",
+    "workflowStep3Label": "Rutare"
+  },
+  "examples": {
+    "whatsapp": {
+      "user": "Bună, pierdem mesaje cu intenție mare după program. Avem nevoie de răspunsuri mai rapide pe WhatsApp și pe site.",
+      "assistant": "Putem automatiza asta. Vrei să trimitem leadurile calificate direct la programare sau preferi să le preia mai întâi echipa ta?",
+      "capture": "Nevoie: captare leaduri după program",
+      "next": "Direcționează cererea calificată spre programare",
+      "step1": "Mesajul intră și primește imediat un răspuns clar, în tonul brandului.",
+      "step2": "Assistio colectează detaliile de care echipa ta are nevoie înainte de handoff.",
+      "step3": "Cumpărătorii serioși merg mai departe spre programare sau spre un om, fără întârziere."
+    },
+    "website": {
+      "user": "Suntem pe pagina de prețuri și vrem să știm ce setup se potrivește unei clinici cu două locații.",
+      "assistant": "Pentru două locații, de obicei recomandăm un setup Growth. Vrei să automatizăm doar chatul de pe site sau și WhatsApp-ul?",
+      "capture": "Context: pagină de prețuri, două locații",
+      "next": "Trimite vizitatorul spre demo consultativ",
+      "step1": "Un vizitator pune o întrebare comercială direct din chatul site-ului.",
+      "step2": "Sunt captate locațiile, volumul și canalele care contează.",
+      "step3": "Leadul calificat ajunge rapid în fluxul corect de demo."
+    },
+    "email": {
+      "user": "Primim prea multe emailuri inbound și avem nevoie de o metodă mai rapidă de a separa cine este cu adevărat serios.",
+      "assistant": "Înțeleg. Putem sorta cererile după intenție și putem trimite oportunitățile bune către pasul următor potrivit. Folosiți deja un link de calendar?",
+      "capture": "Nevoie: triere email și rutare leaduri",
+      "next": "Trimite răspunsurile calificate spre programare",
+      "step1": "Emailul este detectat și încadrat imediat.",
+      "step2": "Detaliile importante sunt extrase pentru ca echipa să vadă contextul rapid.",
+      "step3": "Cererile serioase sunt împinse spre programare sau handoff."
+    },
+    "instagram": {
+      "user": "Oamenii ne scriu constant pe Instagram ca să afle cum pot programa. Avem nevoie de răspunsuri mai rapide și mai consecvente.",
+      "assistant": "Putem automatiza și asta. Vrei să calificăm cererile în DM și să trimitem leadurile serioase spre fluxul vostru de programare?",
+      "capture": "Canal: mesaje directe Instagram",
+      "next": "Califică și trimite spre programare",
+      "step1": "Un mesaj direct cere disponibilitate sau informații despre rezervare.",
+      "step2": "Assistio verifică intenția și captează contextul de bază.",
+      "step3": "Leadurile pregătite sunt împinse rapid spre calea de booking."
+    }
+  },
+  "trust": {
+    "lead": "Construit pentru canalele pe care cumpărătorii tăi deja le preferă.",
+    "channel2": "Chat pe site"
+  },
+  "platform": {
+    "eyebrow": "Platformă",
+    "title": "Platforma Assistio este construită să elimine fricțiunea înainte ca venitul să se piardă.",
+    "lead": "În loc să jonglezi cu inboxuri rupte între ele, calificare manuală și follow-up lent, echipa ta primește un singur sistem coordonat pentru conversații mai rapide și handoff-uri mai curate.",
+    "storyLabel": "Ce se schimbă în practică",
+    "storyTitle": "De la mesaje inbound împrăștiate la un traseu structurat care se simte premium pentru cumpărător.",
+    "storyCopy": "Assistio creează un strat operațional unic peste canalele importante pentru tine, astfel încât fiecare lead să primească un răspuns mai rapid, o calificare consecventă și ruta potrivită spre programare sau suport uman.",
+    "storyPoint1": "Conectezi canalele cu intenție mare fără să reconstruiești tot modul în care lucrezi.",
+    "storyPoint2": "Captezi detaliile de care echipa de vânzări sau operațiuni chiar are nevoie înainte să intervină.",
+    "storyPoint3": "Trimiți cumpărătorii către demo, foi de leaduri sau takeover uman cu tot contextul atașat.",
+    "storyFootTitle": "Implementarea rămâne practică.",
+    "storyFootCopy": "Te ajutăm să definim prompturile, logica de decizie, regulile pe canale și pașii următori în jurul modului în care afacerea ta chiar vinde.",
+    "card1": {
+      "title": "Intake unificat pe canale",
+      "copy": "Aduci WhatsApp, chatul de pe site, Instagram, email și Facebook într-un singur strat coordonat de răspuns."
+    },
+    "card2": {
+      "title": "Logică de calificare",
+      "copy": "Pui întrebările potrivite automat, astfel încât echipa ta să vadă mai devreme urgența, potrivirea și disponibilitatea pentru următorul pas."
+    },
+    "card3": {
+      "title": "Rutare pregătită pentru booking",
+      "copy": "Muți cererea serioasă direct către calendarul tău sau către fluxul de rezervare când conversația este pregătită."
+    },
+    "card4": {
+      "title": "Handoff uman cu context",
+      "copy": "Escaladezi către o persoană doar când nuanța contează, cu istoricul conversației și detaliile leadului deja ordonate."
+    },
+    "card5": {
+      "title": "Vizibilitate operațională",
+      "copy": "Urmărești fluxul de leaduri, acoperirea pe canale și statusul handoff-urilor ca implementarea să rămână măsurabilă și ușor de întreținut."
+    },
+    "card6": {
+      "title": "Experiență multilingvă",
+      "copy": "Păstrezi experiența clară în mai multe limbi fără să transformi UI-ul și workflow-urile într-o problemă de mentenanță."
+    }
+  },
+  "workflow": {
+    "eyebrow": "Cum funcționează",
+    "title": "Un traseu de implementare care rămâne clar pentru echipa ta și fără fricțiune pentru cumpărători.",
+    "lead": "Assistio este gândit să se simtă curat operațional din prima zi: identifici canalele care contează, automatizezi traseul repetitiv și păstrezi escaladarea umană intenționată.",
+    "step1": {
+      "title": "Mapezi punctele de intrare ale conversațiilor",
+      "copy": "Definim de unde intră cererea cu intenție mare, ce date trebuie captate și ce înseamnă un pas următor calificat."
+    },
+    "step2": {
+      "title": "Automatizezi traseul repetitiv",
+      "copy": "Assistio gestionează răspunsurile rapide, întrebările de calificare și deciziile de rutare în tonul și logica aprobate de echipa ta."
+    },
+    "step3": {
+      "title": "Faci handoff doar când momentul este potrivit",
+      "copy": "Cumpărătorii pregătiți merg spre programare, iar conversațiile complexe ajung la un om cu contextul potrivit deja atașat."
+    },
+    "panelLabel": "Ce include de obicei implementarea",
+    "panelTitle": "Setup pe canale, design de calificare, handoff către booking și optimizare continuă.",
+    "panelCopy": "Fiecare rollout este modelat în jurul modului tău de a genera venit, al capacității echipei, al nevoilor de limbă și al punctelor unde răspunsul manual te încetinește acum.",
+    "panelPoint1": "Conectarea linkurilor de booking și a fluxurilor de demo acolo unde contează cel mai mult.",
+    "panelPoint2": "Logică de escaladare pentru momentele în care un om trebuie să preia conversația.",
+    "panelPoint3": "Mesaje localizate care rămân clare pe toate breakpoints și canalele."
+  },
+  "pricing": {
+    "eyebrow": "Prețuri",
+    "title": "Planuri clare, construite să lanseze curat și să se extindă fără haos.",
+    "lead": "Fiecare plan este construit în jurul unui pas următor simplu: programezi o sesiune de lucru, confirmi setup-ul potrivit și intri în implementare cu claritate.",
+    "launch": {
+      "badge": "Launch",
+      "name": "Launch",
+      "price": "149 EUR / lună",
+      "setup": "+ 199 EUR setup unic",
+      "feature1": "Automatizare WhatsApp",
+      "feature2": "Un canal în plus: chat pe site sau email",
+      "feature3": "Un flux de calificare și rutare",
+      "feature4": "O limbă activă",
+      "feature5": "Până la trei utilizatori"
+    },
+    "growth": {
+      "badge": "Cel mai ales",
+      "name": "Growth",
+      "price": "199 EUR / lună",
+      "setup": "+ 299 EUR setup unic",
+      "feature1": "WhatsApp plus încă două canale",
+      "feature2": "Două fluxuri de calificare sau rutare",
+      "feature3": "Urmărire leaduri cu handoff către raportare",
+      "feature4": "Rezumat de performanță",
+      "feature5": "Până la cinci utilizatori"
+    },
+    "scale": {
+      "badge": "Scale",
+      "name": "Scale",
+      "price": "279 EUR / lună",
+      "setup": "+ 349 EUR setup unic",
+      "feature1": "Rollout omnichannel pentru puncte de contact din vânzări și suport",
+      "feature2": "Trei fluxuri de automatizare sau handoff",
+      "feature3": "Reguli de escaladare AI către om",
+      "feature4": "Două limbi active",
+      "feature5": "Până la zece utilizatori"
+    },
+    "note": "Nu este nevoie de niciun angajament pentru programare. Folosim demo-ul ca să recomandăm mixul potrivit de canale, logica de calificare și scope-ul de rollout pentru afacerea ta."
+  },
+  "faq": {
+    "eyebrow": "Întrebări frecvente",
+    "title": "Întrebările pe care cumpărătorii le pun cel mai des înainte să programeze o sesiune de lucru.",
+    "lead": "Scopul este simplu: următorul pas trebuie să fie clar, cu fricțiune minimă și realist din punct de vedere operațional pentru echipa ta.",
+    "q1": {
+      "question": "Ce canale poate automatiza Assistio?",
+      "answer": "Assistio poate fi configurat pentru WhatsApp, chat pe site, email, Instagram și Facebook, în funcție de planul ales și de scope-ul rollout-ului."
+    },
+    "q2": {
+      "question": "Cât durează de obicei setup-ul?",
+      "answer": "Depinde de canale, logica de rutare și viteza de feedback, dar sesiunea de lucru este construită pentru a clarifica rapid scope-ul, astfel încât lansarea să nu se blocheze inutil."
+    },
+    "q3": {
+      "question": "Poate un om să preia conversația?",
+      "answer": "Da. Assistio este gândit să permită takeover uman atunci când nuanța, conformitatea sau judecata comercială cer implicarea unei persoane reale."
+    },
+    "q4": {
+      "question": "Poate Assistio să funcționeze în mai multe limbi?",
+      "answer": "Da. Atât site-ul, cât și mesajele din produs pot fi structurate pentru utilizare multilingvă, iar rollout-ul se poate configura în jurul limbilor pe care afacerea ta le servește activ."
+    },
+    "q5": {
+      "question": "Cum ajung demo-urile și detaliile leadurilor în workflow-ul nostru?",
+      "answer": "În timpul rollout-ului definim dacă conversațiile calificate trebuie să meargă spre booking, spreadsheet, pași în CRM sau handoff uman live, în funcție de modelul vostru de operare."
+    },
+    "q6": {
+      "question": "Ce se întâmplă dacă procesul nostru este mai custom decât sugerează planurile?",
+      "answer": "Folosește formularul de contact sau programează un demo. Putem analiza un setup mai personalizat dacă regulile pe canale, handoff-urile sau nevoile de localizare depășesc un pachet standard."
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Ai nevoie de o configurare personalizată sau de un răspuns rapid înainte de demo?",
+    "lead": "Trimite-ne esențialul și te ajutăm să alegi traseul potrivit de rollout, mixul de canale și următorul pas operațional.",
+    "card1": {
+      "label": "Cea mai rapidă cale",
+      "title": "Programează o sesiune de lucru",
+      "copy": "Folosește calendarul live ca să alegi o oră și să treci împreună cu Assistio prin canalele, obiectivele și constrângerile rollout-ului."
+    },
+    "card2": {
+      "label": "Contacte directe",
+      "title": "Ajungi la echipa din spatele rollout-ului",
+      "copy": "Pentru întrebări comerciale, planificare de livrare sau follow-up legal, poți contacta direct echipa Assistio."
+    },
+    "card3": {
+      "label": "Informații legale",
+      "title": "Informații legale",
+      "copyPrefix": "Assistio este un produs și serviciu operat de"
+    },
+    "legalEntityLabel": "Entitate juridică",
+    "businessAddressLabel": "Adresa companiei",
+    "emailLabel": "Email",
+    "legalContactsLabel": "Contacte legale",
+    "socialLabel": "Social media și canale",
+    "teamRole": "Co-fondator",
+    "formLabel": "Spune-ne ce ai nevoie",
+    "formTitle": "Spune-ne canalul, blocajul și rezultatul urmărit.",
+    "formCopy": "Folosim aceste informații ca să recomandăm următorul pas potrivit și să răspundem cu cea mai relevantă cale de rollout.",
+    "form": {
+      "nameLabel": "Nume",
+      "namePlaceholder": "Numele tău",
+      "emailLabel": "Email de lucru",
+      "emailPlaceholder": "tu@companie.com",
+      "companyLabel": "Companie",
+      "companyPlaceholder": "Numele companiei",
+      "useCaseLabel": "Obiectiv principal",
+      "useCasePlaceholder": "Alege un obiectiv",
+      "useCaseOption1": "Captare leaduri și răspunsuri mai rapide",
+      "useCaseOption2": "Automatizare pentru booking",
+      "useCaseOption3": "Triage și rutare pentru suport",
+      "useCaseOption4": "Rollout multi-canal",
+      "messageLabel": "Contextul proiectului",
+      "messagePlaceholder": "Spune-ne ce canale contează, ce încetinește timpul de răspuns și ce ar trebui să obțină rollout-ul pentru a fi considerat reușit.",
+      "submit": "Trimite cererea",
+      "disclaimer": "Prin trimiterea acestui formular ești de acord ca Assistio să folosească datele tale pentru a răspunde solicitării, pentru a programa un demo și pentru a continua comunicarea comercială sau de suport aferentă.",
+      "sending": "Trimitem cererea...",
+      "success": "Mulțumim. Revenim în scurt timp cu un răspuns.",
+      "error": "Nu am putut trimite cererea acum. Încearcă din nou sau scrie-ne direct pe email."
+    }
+  },
+  "footer": {
+    "tag": "Automatizare AI premium pentru conversații mai rapide și handoff-uri mai curate.",
+    "copy": "Assistio ajută echipele orientate spre venit să automatizeze răspunsul, calificarea și booking-ul pe cele mai importante canale inbound.",
+    "operatorPrefix": "Assistio este operat de",
+    "navTitle": "Navigație",
+    "legalTitle": "Legal",
+    "contactTitle": "Contact",
+    "socialTitle": "Social media și canale",
+    "socials": {
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+    "bookDemo": "Programează demo",
+      "website": "Website",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    },
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni și condiții",
+    "rights": "Toate drepturile rezervate.",
+    "note": "Construit pentru comunicare multilingvă cu clienții, accesibilitate și automatizare scalabilă."
+  },
+  "support": {
+    "title": "Vorbește cu Assistio",
+    "subtitle": "Întrebări rapide înainte de demo?",
+    "aria": "Deschide scurtătura de contact Assistio"
+  },
+  "legal": {
+    "detailsTitle": "Detalii legale",
+    "summary": {
+      "operatorLabel": "Operator",
+      "effectiveDateLabel": "Data intrării în vigoare",
+      "websiteLabel": "Website",
+      "privacyEmailLabel": "Contact pentru confidențialitate",
+      "legalEmailLabel": "Contact legal",
+      "legalContactsLabel": "Contacte legale",
+      "addressLabel": "Adresă înregistrată",
+      "governingLawLabel": "Lege aplicabilă"
+    }
+  },
+  "privacy": {
+    "eyebrow": "Politica de confidențialitate",
+    "title": "Politica de confidențialitate",
+    "lead": "Această Politică de confidențialitate explică modul în care Assistio colectează, folosește, stochează și partajează informații atunci când vizitezi website-ul nostru, ceri informații, programezi un demo, discuți cu noi în chat sau interacționezi în alt mod cu serviciile noastre.",
+    "operatorSectionTitle": "Identificarea companiei",
+    "operatorStatementPrefix": "Acest serviciu este operat de",
+    "section1": {
+      "title": "1. Domeniul de aplicare al acestei Politici",
+      "p1": "Această Politică se aplică informațiilor colectate prin website-ul Assistio, formularele de contact, fluxurile de booking, comunicările prin email, interacțiunile de suport, chatul live Chatwoot, comunicările asistate de AI și alte schimburi de pre-sales sau de servicii legate de operațiunile website-ului nostru.",
+      "p2": "Dacă ești client în baza unui acord scris separat cu Assistio, acel acord poate suplimenta această Politică pentru prelucrările specifice serviciului. Dacă apar contradicții, acordul semnat prevalează pentru relația contractuală relevantă."
+    },
+    "section2": {
+      "title": "2. Ce informații colectăm",
+      "p1": "În funcție de modul în care interacționezi cu noi, putem colecta următoarele categorii de informații:",
+      "item1": "Date de identitate și contact precum nume, funcție, companie, adresă de email, număr de telefon și țară.",
+      "item2": "Detalii comerciale și despre solicitare, cum ar fi use case-ul, canalele de interes, workflow-urile vizate, semnale de buget, preferințe de programare și mesajele trimise prin formulare sau email.",
+      "item3": "Informații de booking și programare trimise prin Google Calendar sau fluxuri similare de programare a demo-ului.",
+      "item4": "Înregistrări de suport și comunicare, inclusiv transcrieri de chat, emailuri de follow-up, note, atașamente și context operațional necesar pentru a răspunde sau a ruta cererea ta.",
+      "item5": "Date tehnice, de utilizare și de dispozitiv, precum adresa IP, tipul browserului, sistemul de operare, paginile de referință, locația aproximativă, timestamp-uri și loguri de securitate sau diagnostic.",
+      "item6": "Date din cookies, storage și preferințe, precum limba, tema, continuitatea sesiunii și interacțiunile necesare pentru funcționarea corectă a website-ului.",
+      "item7": "Orice alte informații pe care alegi să ni le oferi prin formulare, cereri de demo, chat sau alte comunicări."
+    },
+    "section3": {
+      "title": "3. Sursele informațiilor",
+      "p1": "Colectăm informații direct de la tine, automat prin utilizarea website-ului și de la furnizori care susțin booking-ul, comunicarea, analytics, hosting-ul sau securitatea.",
+      "item1": "Informațiile pe care le trimiți prin formulare, email, chat, cereri de demo și conversații de suport.",
+      "item2": "Informațiile generate când navighezi pe website, schimbi limba, modifici tema sau interacționezi cu instrumente integrate.",
+      "item3": "Informațiile create atunci când programezi întâlniri sau schimbi comunicări cu membrii echipei Assistio.",
+      "item4": "Informațiile primite de la infrastructură, analytics, programare sau instrumente de comunicare care acționează în numele nostru."
+    },
+    "section4": {
+      "title": "4. Cum folosim informațiile",
+      "p1": "Folosim datele personale doar pentru scopuri legitime de business legate de operarea, securitatea, îmbunătățirea și livrarea serviciilor Assistio.",
+      "item1": "Pentru a opera website-ul, formularele, chatul live, schimbarea limbii, setările de accesibilitate și funcțiile esențiale ale site-ului.",
+      "item2": "Pentru a răspunde solicitărilor, a califica leaduri, a face follow-up cererilor de contact și a programa sau gestiona demo-uri.",
+      "item3": "Pentru a livra suport clienților, asistență de onboarding și comunicare operațională.",
+      "item4": "Pentru a îmbunătăți mesajele, workflow-urile, calitatea calificării leadurilor, calitatea răspunsurilor și designul serviciului.",
+      "item5": "Pentru a menține securitatea, a detecta abuzul, a remedia incidente și a proteja website-ul și sistemele noastre.",
+      "item6": "Pentru a respecta obligații legale, a rezolva dispute, a aplica termeni și a păstra evidențe necesare.",
+      "item7": "Pentru a analiza performanța, cererea de business și tendințele operaționale, la nivel agregat sau specific contului, atunci când este adecvat.",
+      "item8": "Pentru a antrena, ajusta, supraveghea sau verifica din punct de vedere calitativ fluxurile de comunicare asistate de AI, într-un mod controlat și conform acestei Politici și legii aplicabile."
+    },
+    "section5": {
+      "title": "5. Temeiurile legale pentru prelucrare",
+      "p1": "Acolo unde legislația privind protecția datelor cere un temei legal, ne bazăm de regulă pe unul sau mai multe dintre următoarele:",
+      "item1": "Consimțământul tău, de exemplu când trimiți voluntar un formular, ceri un demo sau accepți cookies opționale acolo unde este necesar.",
+      "item2": "Necesitatea de a lua măsuri la cererea ta înainte de încheierea unui contract, inclusiv calificare de lead, programare și definirea soluției.",
+      "item3": "Executarea unui contract sau a unei relații de servicii atunci când devii client Assistio.",
+      "item4": "Respectarea obligațiilor legale, inclusiv de contabilitate, evidență sau răspuns la solicitări legale.",
+      "item5": "Interesele noastre legitime de a opera, securiza, îmbunătăți, promova și susține website-ul și serviciile conexe, atât timp cât aceste interese nu prevalează asupra drepturilor și libertăților tale."
+    },
+    "section6": {
+      "title": "6. Cookies și tehnologii similare",
+      "p1": "Assistio folosește cookies, local storage și tehnologii similare pentru a reține preferințe de limbă și temă, pentru continuitatea chatului, pentru securitate, pentru măsurarea performanței site-ului și pentru îmbunătățirea experienței utilizatorului.",
+      "p2": "Unele instrumente pot seta propriile cookies sau intrări în storage atunci când sunt încărcate, inclusiv furnizori de analytics, programare sau chat. De regulă le poți gestiona din setările browserului, dar dezactivarea lor poate afecta anumite părți ale site-ului."
+    },
+    "section7": {
+      "title": "7. Chat, booking de demo și comunicări asistate de AI",
+      "p1": "Dacă folosești chatul live, fluxul de booking sau instrumente de suport și calificare asistate de AI, putem prelucra conținutul acestor interacțiuni pentru a răspunde, a ruta cereri, a îmbunătăți calitatea workflow-urilor și a menține fiabilitatea serviciului.",
+      "item1": "Chatwoot sau alte instrumente similare de suport pot prelucra conținutul mesajelor, timestamp-uri, metadate despre browser și contextul de suport.",
+      "item2": "Google Calendar sau instrumente similare de programare pot prelucra preferințe de întâlnire, date de contact și metadate legate de booking.",
+      "item3": "Fluxurile asistate de AI pot ajuta la rezumare, categorisire sau draftarea răspunsurilor, dar rămân supuse controalelor și proceselor noastre operaționale.",
+      "item4": "Te rugăm să eviți trimiterea de date sensibile reglementate prin formularele generale ale site-ului sau chat, cu excepția cazului în care ți se solicită explicit printr-un proces securizat."
+    },
+    "section8": {
+      "title": "8. Partajare și furnizori terți",
+      "p1": "Nu vindem date personale. Putem partaja informații cu furnizori de încredere precum OpenAI, Chatwoot, Stripe, Google Calendar, parteneri de hosting, instrumente de analytics și procesoare de formulare doar atunci când este necesar pentru operarea website-ului, livrarea serviciilor, răspunsul la solicitări sau respectarea obligațiilor legale.",
+      "item1": "Furnizori de hosting, infrastructură și securitate.",
+      "item2": "Furnizori de booking și programare, precum fluxurile Google Calendar.",
+      "item3": "Furnizori de comunicare, AI, email, CRM, plăți sau suport, precum OpenAI, Chatwoot, Stripe și instrumentele de procesare a formularelor.",
+      "item4": "Instrumente de analytics sau performanță folosite pentru a înțelege comportamentul pe site și a îmbunătăți calitatea serviciului.",
+      "item5": "Consilieri profesioniști, furnizori de plăți sau contrapărți comerciale atunci când este rezonabil necesar.",
+      "item6": "Instanțe, autorități de reglementare, organe de aplicare a legii sau alte părți atunci când divulgarea este necesară sau rezonabilă pentru protejarea drepturilor, siguranței sau conformității legale."
+    },
+    "section9": {
+      "title": "9. Transferuri internaționale de date",
+      "p1": "Assistio poate folosi furnizori aflați în țări diferite de a ta. Ca urmare, datele personale pot fi prelucrate internațional, inclusiv în state care s-ar putea să nu ofere același nivel de protecție juridică precum jurisdicția ta locală.",
+      "p2": "Acolo unde este necesar, luăm măsuri rezonabile pentru a susține transferuri legale, cum ar fi clauze contractuale, angajamente ale furnizorilor, controale interne sau alte mecanisme recunoscute de legea aplicabilă."
+    },
+    "section10": {
+      "title": "10. Retenția datelor",
+      "p1": "Păstrăm datele personale doar atât cât este rezonabil necesar pentru scopurile descrise în această Politică, inclusiv operațiuni de business, suport, securitate, conformitate legală și soluționarea disputelor.",
+      "item1": "Datele din formulare, demo-uri și solicitări pot fi păstrate cât timp evaluăm sau răspundem unei relații comerciale potențiale.",
+      "item2": "Înregistrările de suport și comunicare pot fi păstrate cât timp sunt necesare pentru follow-up, asigurarea calității și istoricul contului.",
+      "item3": "Logurile de securitate și tehnice pot fi păstrate pentru răspuns la incidente, prevenirea fraudei și fiabilitatea sistemelor.",
+      "item4": "Când retenția nu mai este justificată, ștergem, anonimizăm sau de-identificăm datele atunci când este rezonabil practic."
+    },
+    "section11": {
+      "title": "11. Securitate",
+      "p1": "Folosim măsuri tehnice, organizatorice și administrative rezonabile pentru a proteja datele personale împotriva accesului, divulgării, modificării sau distrugerii neautorizate. Niciun sistem nu este perfect sigur, astfel că nu putem garanta securitate absolută.",
+      "item1": "Controale de acces și gestionare pe roluri în sistemele interne.",
+      "item2": "Selecția furnizorilor, revizuirea configurațiilor și practici operaționale de securitate menite să reducă expunerea inutilă.",
+      "item3": "Monitorizare, logare și pași de răspuns la incidente pentru identificarea și reacția la activitate suspectă.",
+      "item4": "Principii rezonabile de minimizare și need-to-know în manipularea datelor de website, suport și leaduri."
+    },
+    "section12": {
+      "title": "12. Drepturile și opțiunile tale",
+      "p1": "În funcție de locația ta și de legea aplicabilă, poți avea drepturi în legătură cu datele tale personale.",
+      "item1": "Să ceri acces la datele personale pe care le deținem despre tine.",
+      "item2": "Să ceri corectarea informațiilor inexacte sau incomplete.",
+      "item3": "Să ceri ștergerea atunci când retenția nu mai este necesară sau legală.",
+      "item4": "Să te opui anumitor prelucrări sau să ceri restricționarea lor.",
+      "item5": "Să îți retragi consimțământul acolo unde prelucrarea se bazează pe consimțământ.",
+      "item6": "Să ceri portabilitatea, acolo unde se aplică.",
+      "item7": "Să depui o plângere la o autoritate de supraveghere dacă consideri că drepturile tale au fost încălcate.",
+      "item8": "Să controlezi cookies, local storage și instrumentele similare prin setările browserului, acolo unde tehnic este posibil."
+    },
+    "section13": {
+      "title": "13. Copii",
+      "p1": "Website-ul și serviciile Assistio sunt destinate utilizatorilor de business și nu sunt orientate către copii. Dacă ai motive să crezi că un copil ne-a furnizat date personale fără autorizația corespunzătoare, contactează-ne pentru a analiza și remedia situația."
+    },
+    "section14": {
+      "title": "14. Modificări ale acestei Politici",
+      "p1": "Putem actualiza această Politică de confidențialitate din când în când pentru a reflecta schimbări legale, operaționale, tehnice sau de business. Când facem acest lucru, actualizăm data intrării în vigoare afișată pe această pagină și publicăm versiunea revizuită aici."
+    },
+    "section15": {
+      "title": "15. Contactează-ne",
+      "p1": "Pentru solicitări de confidențialitate, întrebări privind accesul, cereri de corectare, cereri de ștergere sau alte preocupări legate de confidențialitate, contactează Assistio folosind datele de mai jos."
+    }
+  },
+  "terms": {
+    "eyebrow": "Termeni și condiții",
+    "title": "Termeni și condiții",
+    "lead": "Acești Termeni și condiții guvernează utilizarea website-ului Assistio și a serviciilor conexe de pre-sales, contact, booking și informare. Dacă ulterior închei un acord scris separat cu Assistio, acel acord poate suplimenta sau înlocui acești termeni ai website-ului pentru serviciile acoperite.",
+    "providerSectionTitle": "Furnizorul serviciului",
+    "operatorStatementPrefix": "Assistio este operat de",
+    "section1": {
+      "title": "1. Acceptarea acestor Termeni",
+      "p1": "Prin accesarea sau utilizarea website-ului Assistio, prin trimiterea unui formular, programarea unui demo, inițierea unui chat sau orice altă interacțiune cu serviciile publice ale website-ului nostru, accepți acești Termeni și condiții.",
+      "p2": "Dacă nu ești de acord, nu utiliza website-ul sau fluxurile aferente de contact și booking. Dacă folosești website-ul în numele unei companii, declari că ai autoritatea necesară să faci acest lucru."
+    },
+    "section2": {
+      "title": "2. Scopul website-ului și informațiile despre servicii",
+      "p1": "Website-ul Assistio este destinat prezentării companiei, descrierii soluțiilor noastre, susținerii calificării leadurilor, facilitării programării demo-urilor și a contactului cu potențiali sau actuali clienți.",
+      "p2": "Descrierile de funcționalități, canale, prețuri sau abordări de rollout au rol informativ general și se pot modifica în timp. Nu toate funcțiile, integrările sau traseele de servicii sunt disponibile pentru fiecare client sau în fiecare regiune."
+    },
+    "section3": {
+      "title": "3. Utilizare permisă",
+      "p1": "Poți folosi website-ul doar în scopuri legale de business, informare, programare sau suport legate de Assistio.",
+      "item1": "Poți consulta conținutul site-ului, trimite cereri legitime de contact și programa întâlniri cu Assistio.",
+      "item2": "Nu poți folosi website-ul într-un mod fraudulos, abuziv, înșelător, defăimător sau ilegal.",
+      "item3": "Nu poți interfera cu website-ul, încerca acces neautorizat, extrage zone protejate sau testa vulnerabilități fără permisiune scrisă.",
+      "item4": "Nu poți folosi website-ul sau instrumentele noastre de contact pentru spam, cod malițios sau conținut care încalcă drepturile altor persoane."
+    },
+    "section4": {
+      "title": "4. Cereri de demo, formulare și comunicări",
+      "p1": "Dacă trimiți un formular, ceri un demo sau contactezi Assistio, ești de acord să furnizezi informații corecte și, atunci când este potrivit, date reale de contact de business.",
+      "p2": "Înțelegi că Assistio poate răspunde prin email, telefon, invitație de calendar sau chat live atunci când este relevant pentru a gestiona solicitarea, a confirma programarea, a califica oportunitatea sau a continua discuțiile aferente serviciului."
+    },
+    "section5": {
+      "title": "5. Acorduri comerciale separate",
+      "p1": "Conținutul website-ului nu creează, prin el însuși, un contract de servicii obligatoriu. Serviciile plătite, onboarding-ul, scope-ul, livrabilele, nivelurile de serviciu și termenii de plată sunt guvernate, de regulă, de un formular de comandă, ofertă, statement of work, acord de abonament sau alt aranjament scris separat.",
+      "p2": "Dacă se aplică un acord scris separat, acel acord guvernează serviciile acoperite și prevalează asupra acestor termeni ai website-ului în caz de conflict sau inconsecvență."
+    },
+    "section6": {
+      "title": "6. Instrumente și integrări terțe",
+      "p1": "Website-ul poate utiliza sau face trimitere la servicii terțe precum Google Calendar, Chatwoot, OpenAI, Stripe, procesoare de formulare, instrumente de analytics sau platforme de comunicare. Utilizarea acestor servicii poate fi, la rândul ei, guvernată de termenii și politicile lor proprii.",
+      "p2": "Assistio nu este responsabilă pentru actele independente, întreruperile, politicile sau practicile de securitate ale furnizorilor terți, cu excepția cazului în care legea aplicabilă sau un acord scris separat cu tine impune altceva."
+    },
+    "section7": {
+      "title": "7. Proprietate intelectuală",
+      "p1": "Website-ul Assistio, branding-ul, designul, conținutul, layout-ul, elementele grafice, textele, logica software și materialele aferente aparțin Assistio sau licențiatorilor săi și sunt protejate de legislația aplicabilă privind proprietatea intelectuală.",
+      "p2": "Cu excepția cazurilor permise explicit de lege sau prin consimțământ scris, nu poți copia, reproduce, distribui, modifica, republica, crea lucrări derivate sau exploata comercial conținutul website-ului."
+    },
+    "section8": {
+      "title": "8. Feedback și trimiteri",
+      "p1": "Dacă ne trimiți sugestii, idei, comentarii sau feedback neconfidențial despre website ori despre serviciile noastre, acorzi Assistio un drept mondial, neexclusiv și fără redevențe de a folosi acel feedback în scopuri de business, îmbunătățire a serviciului și dezvoltare de produs fără compensație separată."
+    },
+    "section9": {
+      "title": "9. Fără garanția funcționării neîntrerupte sau fără erori",
+      "p1": "Depunem eforturi pentru a menține website-ul corect, sigur și disponibil, dar nu garantăm că website-ul, conținutul său sau orice flux conectat de programare ori chat vor fi întotdeauna disponibile, neîntrerupte, complete, actuale sau fără erori.",
+      "p2": "Putem suspenda, modifica, elimina sau actualiza părți ale website-ului sau ale conținutului său în orice moment, fără notificare prealabilă."
+    },
+    "section10": {
+      "title": "10. Excluderea garanțiilor",
+      "p1": "În măsura maximă permisă de lege, website-ul și instrumentele publice aferente sunt furnizate \"ca atare\" și \"în funcție de disponibilitate\", fără garanții de niciun fel, fie ele exprese, implicite, statutare sau de altă natură.",
+      "p2": "Aceasta include, fără limitare, garanții implicite de vandabilitate, potrivire pentru un anumit scop, titlu, neîncălcare, disponibilitate sau performanță, în măsura în care astfel de garanții pot fi excluse legal."
+    },
+    "section11": {
+      "title": "11. Limitarea răspunderii",
+      "p1": "În măsura maximă permisă de lege, Assistio și afiliații săi, fondatorii, personalul, contractorii, licențiatorii și furnizorii de servicii nu vor răspunde pentru daune indirecte, incidentale, speciale, consecutive, exemplare sau punitive rezultate din utilizarea website-ului sau din încrederea acordată conținutului acestuia.",
+      "p2": "În măsura în care răspunderea nu poate fi exclusă complet, răspunderea totală a Assistio rezultată din utilizarea website-ului va fi limitată la valoarea mai mare dintre suma plătită direct pentru serviciul specific website-ului care a generat pretenția, dacă există, și o sută de euro (100 EUR)."
+    },
+    "section12": {
+      "title": "12. Despăgubire",
+      "p1": "Ești de acord să despăgubești și să exonerezi de răspundere Assistio și afiliații săi, fondatorii, personalul și furnizorii pentru pretenții, pierderi, răspunderi, daune, costuri și cheltuieli rezultate din utilizarea abuzivă a website-ului, încălcarea acestor Termeni sau încălcarea drepturilor unui terț, în afara situațiilor cauzate de conduita noastră proprie ilegală."
+    },
+    "section13": {
+      "title": "13. Suspendare și încetare",
+      "p1": "Putem suspenda, restricționa sau înceta accesul la website, formulare, instrumente de chat sau fluxuri de booking în orice moment dacă apreciem că este necesar pentru securitate, prevenirea abuzului, conformitate legală, integritatea platformei sau motive operaționale."
+    },
+    "section14": {
+      "title": "14. Confidențialitate",
+      "p1": "Utilizarea website-ului este guvernată și de Politica noastră de confidențialitate, care explică modul în care colectăm, folosim și protejăm informațiile personale în legătură cu website-ul și comunicările aferente."
+    },
+    "section15": {
+      "title": "15. Legea aplicabilă și jurisdicția",
+      "p1": "Cu excepția cazului în care un acord scris separat prevede altfel, acești Termeni sunt guvernați de legea identificată în detaliile legale ale Assistio, iar orice dispută va fi soluționată de instanțele sau forurile prevăzute de acea lege, sub rezerva oricărei protecții obligatorii aplicabile consumatorilor."
+    },
+    "section16": {
+      "title": "16. Actualizări ale acestor Termeni",
+      "p1": "Putem actualiza acești Termeni și condiții din când în când pentru a reflecta schimbări legale, tehnice, de business sau de website. Când facem asta, vom revizui data intrării în vigoare afișată pe această pagină și vom publica aici versiunea actualizată."
+    },
+    "section17": {
+      "title": "17. Contactează-ne",
+      "p1": "Dacă ai întrebări legale, comerciale sau legate de website cu privire la acești Termeni, contactează Assistio folosind datele de mai jos."
+    }
+  }
+}

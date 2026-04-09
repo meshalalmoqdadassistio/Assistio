@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n-document-title="meta.contact.title">Contact Assistio | Legal and Commercial Contact Information</title>
+  <meta
+    name="description"
+    content="Contact Assistio for legal, commercial, and rollout questions. View the operating legal entity, business address, and official contact details."
+    data-i18n-content="meta.contact.description"
+  />
+  <meta name="theme-color" content="#eff5ff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ai.assistio.co/assets/og.png" />
+  <meta property="og:url" content="https://ai.assistio.co/contact.html" />
+  <meta property="og:title" content="Contact Assistio | Legal and Commercial Contact Information" data-i18n-content="meta.contact.title" />
+  <meta
+    property="og:description"
+    content="Contact Assistio for legal, commercial, and rollout questions. View the operating legal entity, business address, and official contact details."
+    data-i18n-content="meta.contact.description"
+  />
+  <link rel="canonical" href="https://ai.assistio.co/contact.html" />
+  <link rel="icon" href="./assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    (function () {
+      var doc = document.documentElement;
+      doc.classList.add("site-booting");
+      window.__assistioBootTimeout = window.setTimeout(function () {
+        doc.classList.remove("site-booting");
+      }, 1200);
+      var storedTheme = null;
+      var storedLang = null;
+      var prefersDark = false;
+      var queryTheme = null;
+      var queryLang = null;
+
+      try {
+        var params = new URLSearchParams(window.location.search);
+        queryTheme = params.get("theme");
+        queryLang = params.get("lang");
+        storedTheme = localStorage.getItem("assistio_theme");
+        storedLang = localStorage.getItem("assistio_lang");
+        prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (queryTheme === "light" || queryTheme === "dark") {
+          storedTheme = queryTheme;
+          localStorage.setItem("assistio_theme", queryTheme);
+        }
+        if (queryLang === "en" || queryLang === "ro" || queryLang === "ar") {
+          storedLang = queryLang;
+          localStorage.setItem("assistio_lang", queryLang);
+        }
+      } catch (error) {
+      }
+
+      var theme = storedTheme === "light" || storedTheme === "dark"
+        ? storedTheme
+        : (prefersDark ? "dark" : "light");
+      var browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+      var lang = storedLang === "ro" || storedLang === "ar"
+        ? storedLang
+        : (browserLang.indexOf("ro") === 0 ? "ro" : (browserLang.indexOf("ar") === 0 ? "ar" : "en"));
+
+      doc.setAttribute("data-theme", theme);
+      doc.style.colorScheme = theme;
+      doc.lang = lang;
+      doc.dir = lang === "ar" ? "rtl" : "ltr";
+
+      try {
+        if (queryTheme || queryLang) {
+          var nextUrl = new URL(window.location.href);
+          nextUrl.searchParams.delete("theme");
+          nextUrl.searchParams.delete("lang");
+          window.history.replaceState(null, "", nextUrl.toString());
+        }
+      } catch (error) {
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles.css?v=20260409-29" />
+  <script defer src="./site-config.js?v=20260409-29"></script>
+  <script defer src="./scripts.js?v=20260409-29"></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main" data-i18n="ui.skip">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-shell">
+      <a class="brand" href="./index.html" aria-label="Assistio home">
+        <span class="brand-mark-shell" aria-hidden="true">
+          <img class="brand-mark" src="./assets/logo.png" width="40" height="60" alt="" />
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">Assistio</span>
+          <span class="brand-tag" data-i18n="brand.tag">Revenue-first AI automation for customer conversations</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="ui.navPrimaryLabel">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+          data-nav-toggle
+          data-i18n-aria-label="ui.navOpen"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="nav-panel" data-nav-panel>
+          <div class="nav-panel-intro">
+            <span class="brand-mark-shell nav-panel-mark-shell" aria-hidden="true">
+              <img class="brand-mark" src="./assets/logo.png" width="32" height="48" alt="" />
+            </span>
+            <div class="nav-panel-copy-block">
+              <span class="brand-name">Assistio</span>
+              <p class="nav-panel-copy" data-i18n="brand.tag">Revenue-first AI automation for customer conversations</p>
+            </div>
+          </div>
+
+          <div class="nav-links">
+            <a class="nav-link" href="./index.html#platform" data-i18n="nav.platform">Platform</a>
+            <a class="nav-link" href="./index.html#workflow" data-i18n="nav.workflow">How it works</a>
+            <a class="nav-link" href="./index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+            <a class="nav-link" href="./index.html#faq" data-i18n="nav.faq">FAQ</a>
+            <a class="nav-link" href="./contact.html" data-i18n="nav.contact">Contact</a>
+          </div>
+
+          <div class="nav-mobile-stack">
+            <div class="lang-switch" aria-label="Language switcher" data-i18n-aria-label="ui.languageLabel">
+              <button class="lang-button" type="button" data-lang="en">EN</button>
+              <button class="lang-button" type="button" data-lang="ro">RO</button>
+              <button class="lang-button" type="button" data-lang="ar">AR</button>
+            </div>
+
+            <button class="theme-toggle" type="button" data-theme-toggle data-i18n-aria-label="ui.themeToggleToDark">
+              <span class="theme-toggle-track" aria-hidden="true"></span>
+              <span class="theme-toggle-label" data-theme-label></span>
+            </button>
+
+            <div class="nav-mobile-actions">
+              <a class="btn btn-secondary btn-block" href="./contact.html" data-i18n="ui.contact">Contact us</a>
+              <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-control-group">
+          <div class="lang-switch desktop-lang-switch" aria-label="Language switcher" data-i18n-aria-label="ui.languageLabel">
+            <button class="lang-button" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="ro">RO</button>
+            <button class="lang-button" type="button" data-lang="ar">AR</button>
+          </div>
+
+          <button class="theme-toggle" type="button" data-theme-toggle data-i18n-aria-label="ui.themeToggleToDark">
+            <span class="theme-toggle-track" aria-hidden="true"></span>
+            <span class="theme-toggle-label" data-theme-label></span>
+          </button>
+        </div>
+        <a class="btn btn-primary header-cta" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+      </div>
+    </div>
+    <div class="nav-overlay" data-nav-overlay hidden></div>
+  </header>
+
+  <main id="main">
+    <section class="section contact-section" id="contact">
+      <div class="container contact-shell">
+        <div class="contact-intro" data-reveal>
+          <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+          <h1 class="section-title" data-i18n="contact.title">Need a tailored setup, a legal contact, or a faster answer before you book?</h1>
+          <p class="section-lead" data-i18n="contact.lead">
+            Send us the essentials and we will help you choose the right rollout path, channel mix, and next operational step.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cards-column" data-reveal>
+            <div class="contact-cards">
+              <article class="contact-card" data-reveal>
+                <span class="mini-label" data-i18n="contact.card1.label">Fastest route</span>
+                <h3 data-i18n="contact.card1.title">Book a working session</h3>
+                <p data-i18n="contact.card1.copy">Use the live calendar to pick a time and walk through your channels, goals, and rollout constraints with Assistio.</p>
+                <a class="btn btn-secondary" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+              </article>
+
+              <article class="contact-card" data-reveal>
+                <span class="mini-label" data-i18n="contact.card2.label">Direct contacts</span>
+                <h3 data-i18n="contact.card2.title">Reach the team behind the rollout</h3>
+                <p data-i18n="contact.card2.copy">For commercial questions, delivery planning, or legal follow-up, you can contact the Assistio team directly.</p>
+                <div class="team-list" data-contact-list></div>
+                <div class="contact-social-shell" data-social-shell>
+                  <span class="mini-label" data-i18n="contact.socialLabel">Socials &amp; channels</span>
+                  <div class="social-links-list social-links-list-compact" data-social-links></div>
+                </div>
+              </article>
+
+              <article class="contact-card contact-card-legal" data-reveal>
+                <span class="mini-label" data-i18n="contact.card3.label">Legal information</span>
+                <h3 data-i18n="contact.card3.title">Legal information</h3>
+                <p>
+                  <span data-i18n="contact.card3.copyPrefix">Assistio is a product and service operated by</span>
+                  <span data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</span>.
+                </p>
+                <dl class="mini-legal-details">
+                  <div>
+                    <dt data-i18n="contact.legalEntityLabel">Legal Entity</dt>
+                    <dd data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="contact.businessAddressLabel">Business Address</dt>
+                    <dd data-company-text="registeredAddress">Marzouq Al Otaibi Street, Kazma Commercial Complex, Al Jahra, Kuwait. Address number: 14709176. Civil reference: 2594329.</dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="contact.emailLabel">Email</dt>
+                    <dd><a href="mailto:info@assistio.co" data-company-link="supportEmail">info@assistio.co</a></dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="contact.legalContactsLabel">Legal contacts</dt>
+                    <dd class="mini-legal-contact-list">
+                      <a href="mailto:meshal.almoqdad@assistio.co">meshal.almoqdad@assistio.co</a>
+                      <a href="mailto:ali.annamuhammedov@assistio.co">ali.annamuhammedov@assistio.co</a>
+                    </dd>
+                  </div>
+                </dl>
+              </article>
+            </div>
+          </div>
+
+          <div class="form-card" data-reveal>
+            <div class="form-head">
+              <span class="mini-label" data-i18n="contact.formLabel">Tell us what you need</span>
+              <h3 data-i18n="contact.formTitle">Share your channels, the bottleneck, and the outcome you want.</h3>
+              <p data-i18n="contact.formCopy">We use this information to recommend the best next step and reply with the most relevant rollout path.</p>
+            </div>
+
+            <form class="contact-form" method="POST" novalidate data-contact-form>
+              <label class="field">
+                <span data-i18n="contact.form.nameLabel">Name</span>
+                <input type="text" name="name" autocomplete="name" required data-i18n-placeholder="contact.form.namePlaceholder" placeholder="Your name" />
+              </label>
+
+              <label class="field">
+                <span data-i18n="contact.form.emailLabel">Work email</span>
+                <input type="email" name="email" autocomplete="email" required data-i18n-placeholder="contact.form.emailPlaceholder" placeholder="you@company.com" />
+              </label>
+
+              <label class="field">
+                <span data-i18n="contact.form.companyLabel">Company</span>
+                <input type="text" name="company" autocomplete="organization" required data-i18n-placeholder="contact.form.companyPlaceholder" placeholder="Company name" />
+              </label>
+
+              <label class="field">
+                <span data-i18n="contact.form.useCaseLabel">Primary goal</span>
+                <select name="use_case" required>
+                  <option value="" data-i18n="contact.form.useCasePlaceholder">Choose a goal</option>
+                  <option value="lead-capture" data-i18n="contact.form.useCaseOption1">Lead capture and faster replies</option>
+                  <option value="booking-automation" data-i18n="contact.form.useCaseOption2">Booking automation</option>
+                  <option value="support-triage" data-i18n="contact.form.useCaseOption3">Support triage and routing</option>
+                  <option value="multichannel" data-i18n="contact.form.useCaseOption4">Multi-channel rollout</option>
+                </select>
+              </label>
+
+              <label class="field field-full">
+                <span data-i18n="contact.form.messageLabel">Project context</span>
+                <textarea
+                  name="message"
+                  rows="5"
+                  required
+                  data-i18n-placeholder="contact.form.messagePlaceholder"
+                  placeholder="Tell us which channels matter, what is slowing response time down, and what a successful rollout needs to achieve."
+                ></textarea>
+              </label>
+
+              <button class="btn btn-primary btn-block" type="submit" data-form-submit data-i18n="contact.form.submit">Send request</button>
+              <p class="form-disclaimer" data-i18n="contact.form.disclaimer">By sending this form, you agree that Assistio may use your details to respond to your request, schedule a demo, and continue related sales or support communication.</p>
+              <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-branding">
+        <a class="brand brand-footer" href="./index.html" aria-label="Assistio home">
+          <span class="brand-mark-shell brand-mark-shell-footer" aria-hidden="true">
+            <img class="brand-mark" src="./assets/logo.png" width="36" height="54" alt="" />
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Assistio</span>
+            <span class="brand-tag" data-i18n="footer.tag">Premium AI automation for faster conversations and cleaner handoffs.</span>
+          </span>
+        </a>
+        <p class="footer-copy" data-i18n="footer.copy">Assistio helps revenue-focused teams automate response, qualification, and booking across their most important inbound channels.</p>
+        <p class="footer-operator-line">
+          <span data-i18n="footer.operatorPrefix">Assistio is operated by</span>
+          <span data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</span>.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.navTitle">Navigation</h2>
+        <nav aria-label="Footer navigation" data-i18n-aria-label="ui.footerNavLabel">
+          <a href="./index.html#platform" data-i18n="nav.platform">Platform</a>
+          <a href="./index.html#workflow" data-i18n="nav.workflow">How it works</a>
+          <a href="./index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+          <a href="./index.html#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="./contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.legalTitle">Legal</h2>
+        <nav aria-label="Legal pages" data-i18n-aria-label="ui.footerLegalLabel">
+          <a href="./privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="./terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.contactTitle">Contact</h2>
+        <div class="footer-contact">
+          <a href="mailto:info@assistio.co" data-company-link="supportEmail">info@assistio.co</a>
+          <a href="tel:+400729501787">+40 0729 501 787</a>
+        </div>
+        <div class="footer-social-shell" data-social-shell>
+          <span class="footer-subtitle" data-i18n="footer.socialTitle">Socials &amp; channels</span>
+          <div class="social-links-list" data-social-links></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year></span> Assistio. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p data-i18n="footer.note">Built for multilingual customer communication, accessibility, and scalable automation.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n-document-title="meta.terms.title">Terms &amp; Conditions | Assistio</title>
+  <meta
+    name="description"
+    content="Terms and Conditions governing use of the Assistio website, contact workflows, demo requests, and related service information."
+    data-i18n-content="meta.terms.description"
+  />
+  <meta name="theme-color" content="#eff5ff" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://ai.assistio.co/assets/og.png" />
+  <meta property="og:url" content="https://ai.assistio.co/terms.html" />
+  <meta property="og:title" content="Terms & Conditions | Assistio" data-i18n-content="meta.terms.title" />
+  <meta
+    property="og:description"
+    content="Terms and Conditions governing use of the Assistio website, contact workflows, demo requests, and related service information."
+    data-i18n-content="meta.terms.description"
+  />
+  <link rel="canonical" href="https://ai.assistio.co/terms.html" />
+  <link rel="icon" href="./assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    (function () {
+      var doc = document.documentElement;
+      doc.classList.add("site-booting");
+      window.__assistioBootTimeout = window.setTimeout(function () {
+        doc.classList.remove("site-booting");
+      }, 1200);
+      var storedTheme = null;
+      var storedLang = null;
+      var prefersDark = false;
+      var queryTheme = null;
+      var queryLang = null;
+
+      try {
+        var params = new URLSearchParams(window.location.search);
+        queryTheme = params.get("theme");
+        queryLang = params.get("lang");
+        storedTheme = localStorage.getItem("assistio_theme");
+        storedLang = localStorage.getItem("assistio_lang");
+        prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (queryTheme === "light" || queryTheme === "dark") {
+          storedTheme = queryTheme;
+          localStorage.setItem("assistio_theme", queryTheme);
+        }
+        if (queryLang === "en" || queryLang === "ro" || queryLang === "ar") {
+          storedLang = queryLang;
+          localStorage.setItem("assistio_lang", queryLang);
+        }
+      } catch (error) {
+      }
+
+      var theme = storedTheme === "light" || storedTheme === "dark"
+        ? storedTheme
+        : (prefersDark ? "dark" : "light");
+      var browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+      var lang = storedLang === "ro" || storedLang === "ar"
+        ? storedLang
+        : (browserLang.indexOf("ro") === 0 ? "ro" : (browserLang.indexOf("ar") === 0 ? "ar" : "en"));
+
+      doc.setAttribute("data-theme", theme);
+      doc.style.colorScheme = theme;
+      doc.lang = lang;
+      doc.dir = lang === "ar" ? "rtl" : "ltr";
+
+      try {
+        if (queryTheme || queryLang) {
+          var nextUrl = new URL(window.location.href);
+          nextUrl.searchParams.delete("theme");
+          nextUrl.searchParams.delete("lang");
+          window.history.replaceState(null, "", nextUrl.toString());
+        }
+      } catch (error) {
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles.css?v=20260409-29" />
+  <script defer src="./site-config.js?v=20260409-29"></script>
+  <script defer src="./scripts.js?v=20260409-29"></script>
+</head>
+<body data-page="terms">
+  <a class="skip-link" href="#main" data-i18n="ui.skip">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-shell">
+      <a class="brand" href="./index.html" aria-label="Assistio home">
+        <span class="brand-mark-shell" aria-hidden="true">
+          <img class="brand-mark" src="./assets/logo.png" width="40" height="60" alt="" />
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">Assistio</span>
+          <span class="brand-tag" data-i18n="brand.tag">Revenue-first AI automation for customer conversations</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="ui.navPrimaryLabel">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+          data-nav-toggle
+          data-i18n-aria-label="ui.navOpen"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="nav-panel" data-nav-panel>
+          <div class="nav-panel-intro">
+            <span class="brand-mark-shell nav-panel-mark-shell" aria-hidden="true">
+              <img class="brand-mark" src="./assets/logo.png" width="32" height="48" alt="" />
+            </span>
+            <div class="nav-panel-copy-block">
+              <span class="brand-name">Assistio</span>
+              <p class="nav-panel-copy" data-i18n="brand.tag">Revenue-first AI automation for customer conversations</p>
+            </div>
+          </div>
+
+          <div class="nav-links">
+            <a class="nav-link" href="./index.html#platform" data-i18n="nav.platform">Platform</a>
+            <a class="nav-link" href="./index.html#workflow" data-i18n="nav.workflow">How it works</a>
+            <a class="nav-link" href="./index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+            <a class="nav-link" href="./index.html#faq" data-i18n="nav.faq">FAQ</a>
+            <a class="nav-link" href="./contact.html" data-i18n="nav.contact">Contact</a>
+          </div>
+
+          <div class="nav-mobile-stack">
+            <div class="lang-switch" aria-label="Language switcher" data-i18n-aria-label="ui.languageLabel">
+              <button class="lang-button" type="button" data-lang="en">EN</button>
+              <button class="lang-button" type="button" data-lang="ro">RO</button>
+              <button class="lang-button" type="button" data-lang="ar">AR</button>
+            </div>
+
+            <button class="theme-toggle" type="button" data-theme-toggle data-i18n-aria-label="ui.themeToggleToDark">
+              <span class="theme-toggle-track" aria-hidden="true"></span>
+              <span class="theme-toggle-label" data-theme-label></span>
+            </button>
+
+            <div class="nav-mobile-actions">
+              <a class="btn btn-secondary btn-block" href="./contact.html" data-i18n="ui.contact">Contact us</a>
+              <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-control-group">
+          <div class="lang-switch desktop-lang-switch" aria-label="Language switcher" data-i18n-aria-label="ui.languageLabel">
+            <button class="lang-button" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="ro">RO</button>
+            <button class="lang-button" type="button" data-lang="ar">AR</button>
+          </div>
+
+          <button class="theme-toggle" type="button" data-theme-toggle data-i18n-aria-label="ui.themeToggleToDark">
+            <span class="theme-toggle-track" aria-hidden="true"></span>
+            <span class="theme-toggle-label" data-theme-label></span>
+          </button>
+        </div>
+        <a class="btn btn-primary header-cta" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+      </div>
+    </div>
+    <div class="nav-overlay" data-nav-overlay hidden></div>
+  </header>
+
+  <main id="main" class="legal-main">
+    <section class="section legal-hero">
+      <div class="container legal-grid">
+        <article class="legal-card" data-reveal>
+          <span class="eyebrow" data-i18n="terms.eyebrow">Terms &amp; Conditions</span>
+          <h1 class="legal-title" data-i18n="terms.title">Terms &amp; Conditions</h1>
+          <p class="legal-lead" data-i18n="terms.lead">These Terms &amp; Conditions govern your use of the Assistio website and related pre-sales, contact, booking, and information services. If you later enter into a separate written agreement with Assistio, that agreement may supplement or override these website terms for the covered services.</p>
+          <p class="legal-entity-statement">
+            <span data-i18n="terms.operatorStatementPrefix">Assistio is operated by</span>
+            <span data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</span>.
+          </p>
+
+          <div class="legal-summary-grid">
+            <article class="legal-summary-card">
+              <span class="mini-label" data-i18n="legal.summary.operatorLabel">Operator</span>
+              <strong data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</strong>
+            </article>
+            <article class="legal-summary-card">
+              <span class="mini-label" data-i18n="legal.summary.effectiveDateLabel">Effective date</span>
+              <strong data-company-text="effectiveDate">April 7, 2026</strong>
+            </article>
+            <article class="legal-summary-card">
+              <span class="mini-label" data-i18n="legal.summary.websiteLabel">Website</span>
+              <strong data-company-text="siteUrl">https://ai.assistio.co</strong>
+            </article>
+          </div>
+        </article>
+
+        <aside class="legal-aside" data-reveal>
+          <div class="legal-side-card">
+            <span class="mini-label" data-i18n="legal.detailsTitle">Legal details</span>
+            <dl class="legal-details">
+              <div>
+                <dt data-i18n="legal.summary.operatorLabel">Operator</dt>
+                <dd data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</dd>
+              </div>
+              <div>
+                <dt data-i18n="legal.summary.legalEmailLabel">Legal contact</dt>
+                <dd><a href="mailto:info@assistio.co" data-company-link="legalEmail">info@assistio.co</a></dd>
+              </div>
+              <div>
+                <dt data-i18n="legal.summary.legalContactsLabel">Legal contacts</dt>
+                <dd class="legal-contact-stack">
+                  <a href="mailto:meshal.almoqdad@assistio.co">meshal.almoqdad@assistio.co</a>
+                  <a href="mailto:ali.annamuhammedov@assistio.co">ali.annamuhammedov@assistio.co</a>
+                </dd>
+              </div>
+              <div>
+                <dt data-i18n="legal.summary.governingLawLabel">Governing law</dt>
+                <dd data-company-text="governingLaw">Specified in the final signed agreement or applicable law.</dd>
+              </div>
+              <div>
+                <dt data-i18n="legal.summary.websiteLabel">Website</dt>
+                <dd><a href="https://ai.assistio.co" target="_blank" rel="noopener noreferrer" data-company-link="siteUrl">https://ai.assistio.co</a></dd>
+              </div>
+            </dl>
+            <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" target="_blank" rel="noopener noreferrer" data-booking-link data-i18n="ui.bookDemo">Book a demo</a>
+            <a class="btn btn-secondary btn-block" href="./contact.html" data-i18n="ui.contact">Contact us</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section legal-content-section">
+      <div class="container legal-content">
+        <article class="legal-card legal-article" data-reveal>
+          <section class="legal-section">
+            <h2 data-i18n="terms.providerSectionTitle">Service provider</h2>
+            <p class="legal-entity-statement">
+              <span data-i18n="terms.operatorStatementPrefix">Assistio is operated by</span>
+              <span data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</span>.
+            </p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section1.title">1. Acceptance of these Terms</h2>
+            <p data-i18n="terms.section1.p1">By accessing or using the Assistio website, submitting a form, booking a demo, starting a chat, or otherwise engaging with our public-facing website services, you agree to these Terms &amp; Conditions.</p>
+            <p data-i18n="terms.section1.p2">If you do not agree, do not use the website or related contact and booking workflows. If you use the website on behalf of a company, you represent that you have authority to do so.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section2.title">2. Website purpose and service information</h2>
+            <p data-i18n="terms.section2.p1">The Assistio website is intended to present our business, describe our solutions, support lead qualification, enable demo booking, and facilitate contact with prospective or current customers.</p>
+            <p data-i18n="terms.section2.p2">Descriptions of features, channels, pricing, or rollout approaches are for general information only and may change from time to time. Not every feature, integration, or service path is available to every customer or in every region.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section3.title">3. Permitted use</h2>
+            <p data-i18n="terms.section3.p1">You may use the website only for lawful business, informational, scheduling, or support-related purposes connected to Assistio.</p>
+            <ul>
+              <li data-i18n="terms.section3.item1">You may review website content, submit legitimate contact requests, and book meetings with Assistio.</li>
+              <li data-i18n="terms.section3.item2">You may not use the website in a way that is fraudulent, abusive, misleading, defamatory, or unlawful.</li>
+              <li data-i18n="terms.section3.item3">You may not interfere with the website, attempt unauthorized access, scrape protected areas, or test vulnerabilities without written permission.</li>
+              <li data-i18n="terms.section3.item4">You may not use the website or our contact tools to send spam, malicious code, or content that infringes third-party rights.</li>
+            </ul>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section4.title">4. Demo requests, contact submissions, and communications</h2>
+            <p data-i18n="terms.section4.p1">If you submit a form, request a demo, or contact Assistio, you agree to provide accurate information and to use real business contact details where appropriate.</p>
+            <p data-i18n="terms.section4.p2">You understand that Assistio may respond by email, phone, calendar invitation, or live chat where relevant to handle your request, confirm scheduling, qualify the opportunity, or continue related service discussions.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section5.title">5. Separate commercial agreements</h2>
+            <p data-i18n="terms.section5.p1">Website content does not by itself create a binding service contract. Paid services, onboarding, scope, deliverables, service levels, and payment terms are typically governed by a separate order form, proposal, statement of work, subscription agreement, or other written arrangement.</p>
+            <p data-i18n="terms.section5.p2">If a separate written agreement applies, that agreement governs the covered services and takes precedence over these website terms for any conflict or inconsistency.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section6.title">6. Third-party tools and integrations</h2>
+            <p data-i18n="terms.section6.p1">The website may use or link to third-party services such as Google Calendar, Chatwoot, OpenAI, Stripe, form processors, analytics tools, or communication platforms. Your use of those services may also be governed by their own terms and privacy notices.</p>
+            <p data-i18n="terms.section6.p2">Assistio is not responsible for the independent acts, outages, policies, or security practices of third-party providers except to the extent required by applicable law or a separate written agreement with you.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section7.title">7. Intellectual property</h2>
+            <p data-i18n="terms.section7.p1">The Assistio website, branding, design, content, layout, graphics, copy, software logic, and related materials are owned by Assistio or its licensors and are protected by applicable intellectual property laws.</p>
+            <p data-i18n="terms.section7.p2">Except where explicitly allowed by law or written permission, you may not copy, reproduce, distribute, modify, republish, create derivative works from, or commercially exploit website content.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section8.title">8. Feedback and submissions</h2>
+            <p data-i18n="terms.section8.p1">If you send suggestions, ideas, comments, or non-confidential feedback about the website or our services, you grant Assistio a worldwide, non-exclusive, royalty-free right to use that feedback for business, service improvement, and product development purposes without separate compensation.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section9.title">9. No guarantee of uninterrupted or error-free website operation</h2>
+            <p data-i18n="terms.section9.p1">We work to keep the website accurate, secure, and available, but we do not guarantee that the website, its content, or any linked scheduling or chat workflow will always be available, uninterrupted, complete, current, or error-free.</p>
+            <p data-i18n="terms.section9.p2">We may suspend, change, remove, or update parts of the website or its content at any time without prior notice.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section10.title">10. Disclaimer of warranties</h2>
+            <p data-i18n="terms.section10.p1">To the maximum extent permitted by law, the website and related public-facing tools are provided on an "as is" and "as available" basis without warranties of any kind, whether express, implied, statutory, or otherwise.</p>
+            <p data-i18n="terms.section10.p2">This includes, without limitation, implied warranties of merchantability, fitness for a particular purpose, title, non-infringement, availability, or performance, except to the extent such warranties cannot lawfully be excluded.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section11.title">11. Limitation of liability</h2>
+            <p data-i18n="terms.section11.p1">To the maximum extent permitted by law, Assistio and its affiliates, founders, personnel, contractors, licensors, and service providers will not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages arising out of or related to your use of the website or reliance on its content.</p>
+            <p data-i18n="terms.section11.p2">To the extent liability cannot be fully excluded, Assistio's aggregate liability arising from website use will be limited to the greater of the amount you paid directly for the website-specific service giving rise to the claim, if any, or one hundred euros (EUR 100).</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section12.title">12. Indemnity</h2>
+            <p data-i18n="terms.section12.p1">You agree to indemnify, defend, and hold harmless Assistio and its affiliates, founders, personnel, and providers from claims, losses, liabilities, damages, costs, and expenses arising from your misuse of the website, your violation of these Terms, or your infringement of any third-party right, except to the extent caused by our own unlawful conduct.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section13.title">13. Suspension and termination</h2>
+            <p data-i18n="terms.section13.p1">We may suspend, restrict, or terminate access to the website, forms, chat tools, or booking workflows at any time if we believe it is necessary for security, abuse prevention, legal compliance, platform integrity, or operational reasons.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section14.title">14. Privacy</h2>
+            <p data-i18n="terms.section14.p1">Your use of the website is also governed by our Privacy Policy, which explains how we collect, use, and protect personal information in connection with the website and related communications.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section15.title">15. Governing law and jurisdiction</h2>
+            <p data-i18n="terms.section15.p1">Unless a separate written agreement states otherwise, these Terms are governed by the law identified in Assistio's legal details and any disputes shall be handled in the courts or dispute forums that law requires, subject to any mandatory consumer protections that apply to you.</p>
+            <div class="legal-inline-detail">
+              <strong data-i18n="legal.summary.governingLawLabel">Governing law</strong>
+              <span data-company-text="governingLaw">Specified in the final signed agreement or applicable law.</span>
+            </div>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section16.title">16. Updates to these Terms</h2>
+            <p data-i18n="terms.section16.p1">We may update these Terms &amp; Conditions from time to time to reflect legal, technical, business, or website changes. When we do, we will revise the effective date on this page and publish the updated version here.</p>
+          </section>
+
+          <section class="legal-section">
+            <h2 data-i18n="terms.section17.title">17. Contact us</h2>
+            <p data-i18n="terms.section17.p1">If you have legal, commercial, or website-related questions about these Terms, please contact Assistio using the details below.</p>
+            <ul class="legal-contact-list">
+              <li class="legal-contact-item">
+                <strong data-i18n="legal.summary.legalEmailLabel">Legal contact</strong>
+                <span><a href="mailto:info@assistio.co" data-company-link="legalEmail">info@assistio.co</a></span>
+              </li>
+              <li class="legal-contact-item">
+                <strong data-i18n="legal.summary.legalContactsLabel">Legal contacts</strong>
+                <span class="legal-contact-stack">
+                  <a href="mailto:meshal.almoqdad@assistio.co">meshal.almoqdad@assistio.co</a>
+                  <a href="mailto:ali.annamuhammedov@assistio.co">ali.annamuhammedov@assistio.co</a>
+                </span>
+              </li>
+              <li class="legal-contact-item">
+                <strong data-i18n="legal.summary.addressLabel">Registered address</strong>
+                <span data-company-text="registeredAddress">Marzouq Al Otaibi Street, Kazma Commercial Complex, Al Jahra, Kuwait. Address number: 14709176. Civil reference: 2594329.</span>
+              </li>
+              <li class="legal-contact-item">
+                <strong data-i18n="legal.summary.websiteLabel">Website</strong>
+                <span><a href="https://ai.assistio.co" target="_blank" rel="noopener noreferrer" data-company-link="siteUrl">https://ai.assistio.co</a></span>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-branding">
+        <a class="brand brand-footer" href="./index.html" aria-label="Assistio home">
+          <span class="brand-mark-shell brand-mark-shell-footer" aria-hidden="true">
+            <img class="brand-mark" src="./assets/logo.png" width="36" height="54" alt="" />
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Assistio</span>
+            <span class="brand-tag" data-i18n="footer.tag">Premium AI automation for faster conversations and cleaner handoffs.</span>
+          </span>
+        </a>
+        <p class="footer-copy" data-i18n="footer.copy">Assistio helps revenue-focused teams automate response, qualification, and booking across their most important inbound channels.</p>
+        <p class="footer-operator-line">
+          <span data-i18n="footer.operatorPrefix">Assistio is operated by</span>
+          <span data-company-text="legalEntityName">شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها</span>.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.navTitle">Navigation</h2>
+        <nav aria-label="Footer navigation" data-i18n-aria-label="ui.footerNavLabel">
+          <a href="./index.html#platform" data-i18n="nav.platform">Platform</a>
+          <a href="./index.html#workflow" data-i18n="nav.workflow">How it works</a>
+          <a href="./index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+          <a href="./index.html#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="./contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.legalTitle">Legal</h2>
+        <nav aria-label="Legal pages" data-i18n-aria-label="ui.footerLegalLabel">
+          <a href="./privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="./terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.contactTitle">Contact</h2>
+        <div class="footer-contact">
+          <a href="mailto:info@assistio.co" data-company-link="supportEmail">info@assistio.co</a>
+          <a href="tel:+400729501787">+40 0729 501 787</a>
+        </div>
+        <div class="footer-social-shell" data-social-shell>
+          <span class="footer-subtitle" data-i18n="footer.socialTitle">Socials &amp; channels</span>
+          <div class="social-links-list" data-social-links></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year></span> Assistio. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p data-i18n="footer.note">Built for multilingual customer communication, accessibility, and scalable automation.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
