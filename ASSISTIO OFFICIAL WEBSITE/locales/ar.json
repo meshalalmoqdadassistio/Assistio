@@ -266,6 +266,7 @@
     "legalEntityLabel": "الكيان القانوني",
     "businessAddressLabel": "عنوان الشركة",
     "emailLabel": "البريد الإلكتروني",
+    "legalContactsLabel": "جهات الاتصال القانونية",
     "socialLabel": "القنوات الاجتماعية وقنوات التواصل",
     "teamRole": "شريك مؤسس",
     "formLabel": "أخبرنا بما تحتاجه",
@@ -328,6 +329,7 @@
       "websiteLabel": "الموقع",
       "privacyEmailLabel": "جهة الخصوصية",
       "legalEmailLabel": "جهة قانونية",
+      "legalContactsLabel": "جهات الاتصال القانونية",
       "addressLabel": "العنوان المسجل",
       "governingLawLabel": "القانون الحاكم"
     }
