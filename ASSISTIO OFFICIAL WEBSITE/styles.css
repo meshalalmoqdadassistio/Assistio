@@ -1423,6 +1423,12 @@ html[data-theme="dark"] .conversation-window {
   overflow-wrap: anywhere;
 }
 
+.mini-legal-contact-list,
+.legal-contact-stack {
+  display: grid;
+  gap: 6px;
+}
+
 .team-name {
   font-size: 1rem;
 }
