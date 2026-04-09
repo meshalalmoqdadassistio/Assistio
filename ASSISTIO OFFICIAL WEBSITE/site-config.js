@@ -2,7 +2,7 @@ window.ASSISTIO_SITE_CONFIG = Object.freeze({
   siteUrl: "https://ai.assistio.co",
   bookingUrl: "https://calendar.app.google/mF4N138gHQZpTKqc6",
   contactFormEndpoint: "https://formspree.io/f/xqekolgy",
-  localeVersion: "2026-04-09-c",
+  localeVersion: "2026-04-09-d",
   localePaths: Object.freeze({
     en: "./locales/en.json",
     ro: "./locales/ro.json",
@@ -10,10 +10,10 @@ window.ASSISTIO_SITE_CONFIG = Object.freeze({
   }),
   company: Object.freeze({
     brandName: "Assistio",
-    legalEntityName: "Assistio",
-    supportEmail: "meshal.almoqdad@assistio.co",
-    privacyEmail: "meshal.almoqdad@assistio.co",
-    legalEmail: "meshal.almoqdad@assistio.co",
+    legalEntityName: "شركة المستقبل الرقمي لأجهزة الكمبيوتر والأنظمة الأمنية وتركيبها وصيانتها",
+    supportEmail: "info@assistio.co",
+    privacyEmail: "info@assistio.co",
+    legalEmail: "info@assistio.co",
     registeredAddress: Object.freeze({
       en: "Available upon request or in a signed commercial agreement.",
       ro: "Disponibil\u0103 la cerere sau \u00eentr-un acord comercial semnat.",
@@ -53,7 +53,7 @@ window.ASSISTIO_SITE_CONFIG = Object.freeze({
     }),
     Object.freeze({
       id: "email",
-      href: "mailto:meshal.almoqdad@assistio.co"
+      href: "mailto:info@assistio.co"
     }),
     Object.freeze({
       id: "x",
