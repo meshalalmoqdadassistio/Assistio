@@ -809,6 +809,16 @@
     });
   }
 
+  function clearSectionHash() {
+    if (page !== "home" || !window.location.hash) return;
+
+    try {
+      const cleanUrl = window.location.pathname + window.location.search;
+      window.history.replaceState(null, "", cleanUrl);
+    } catch (error) {
+    }
+  }
+
   function markActiveSection(id) {
     navLinks.forEach((link) => {
       const isActive = link.getAttribute("data-nav-link") === id;
@@ -1236,10 +1246,8 @@
       if (!target) return;
 
       event.preventDefault();
-      if (window.location.hash !== href) {
-        history.pushState(null, "", href);
-      }
       restoreHashPosition(href, true);
+      window.setTimeout(clearSectionHash, 40);
     });
   });
 
@@ -1297,6 +1305,7 @@
   window.addEventListener("hashchange", () => {
     if (page === "home" && window.location.hash) {
       restoreHashPosition(window.location.hash, true);
+      window.setTimeout(clearSectionHash, 40);
     }
   });
 
@@ -1304,6 +1313,7 @@
     finishBoot();
     if (page === "home" && window.location.hash) {
       restoreHashPosition(window.location.hash, false);
+      window.setTimeout(clearSectionHash, 140);
     }
   });
 
