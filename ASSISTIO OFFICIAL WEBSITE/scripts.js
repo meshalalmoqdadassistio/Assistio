@@ -270,8 +270,8 @@
       return rawHref;
     }
 
-    url.searchParams.set("lang", activeLang);
-    url.searchParams.set("theme", activeTheme);
+    url.searchParams.delete("lang");
+    url.searchParams.delete("theme");
     return url.toString();
   }
 
@@ -283,8 +283,8 @@
       return;
     }
 
-    currentUrl.searchParams.set("lang", activeLang);
-    currentUrl.searchParams.set("theme", activeTheme);
+    currentUrl.searchParams.delete("lang");
+    currentUrl.searchParams.delete("theme");
 
     const nextStateUrl = currentUrl.toString();
     if (nextStateUrl === lastStateUrl) {
