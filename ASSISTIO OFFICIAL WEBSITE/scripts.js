@@ -56,6 +56,44 @@
     step2: document.querySelector('[data-example="step2"]'),
     step3: document.querySelector('[data-example="step3"]')
   };
+  const ENGLISH_EXAMPLES = Object.freeze({
+    whatsapp: Object.freeze({
+      user: "Hi, we keep missing high-intent messages after hours. We need faster replies across WhatsApp and our website.",
+      assistant: "We can automate that. Do you want qualified leads sent directly to booking, or should Assistio hand them to your team first?",
+      capture: "Need: after-hours lead capture",
+      next: "Route qualified demand to booking",
+      step1: "A message arrives and gets an immediate, on-brand reply.",
+      step2: "Assistio collects the details your team needs before a handoff.",
+      step3: "Serious buyers move toward booking or a human conversation without delay."
+    }),
+    website: Object.freeze({
+      user: "We are on the pricing page and want to know which setup fits a clinic with two locations.",
+      assistant: "For two locations, we usually recommend a Growth setup. Do you want to automate only website chat, or WhatsApp as well?",
+      capture: "Context: pricing page, two locations",
+      next: "Send the visitor into a consultative demo flow",
+      step1: "A visitor asks a commercial question directly inside website chat.",
+      step2: "Location count, channel mix, and rollout needs are captured automatically.",
+      step3: "The qualified lead moves quickly into the right demo path."
+    }),
+    email: Object.freeze({
+      user: "We receive too many inbound emails and need a faster way to separate serious buyers from the rest.",
+      assistant: "Understood. We can qualify by intent and move strong opportunities to the next step automatically. Do you already use a calendar link?",
+      capture: "Need: email triage and lead routing",
+      next: "Move qualified replies into booking",
+      step1: "An inbound email is detected and classified immediately.",
+      step2: "Assistio extracts the key sales context before a teammate steps in.",
+      step3: "Serious requests move into booking or a human handoff without delay."
+    }),
+    instagram: Object.freeze({
+      user: "People keep messaging us on Instagram asking how they can book. We need faster, more consistent replies.",
+      assistant: "We can automate that too. Do you want DM leads qualified first and then routed into your booking flow?",
+      capture: "Channel: Instagram direct messages",
+      next: "Qualify demand and route into booking",
+      step1: "A direct message asks about booking or availability.",
+      step2: "Assistio checks buying intent and captures the core details.",
+      step3: "Ready leads move quickly into booking or a human follow-up path."
+    })
+  });
   const i18nTextElements = Array.from(document.querySelectorAll("[data-i18n]"));
   const i18nPlaceholderElements = Array.from(document.querySelectorAll("[data-i18n-placeholder]"));
   const i18nContentElements = Array.from(document.querySelectorAll("[data-i18n-content]"));
@@ -704,7 +742,12 @@
   }
 
   function getExampleContent(exampleName) {
-    return lookup(activeLocale, "examples." + exampleName) || lookup(activeLocale, "examples.whatsapp") || {};
+    const englishBase = ENGLISH_EXAMPLES.whatsapp || {};
+    const englishVariant = ENGLISH_EXAMPLES[exampleName] || englishBase;
+    const localizedBase = lookup(activeLocale, "examples.whatsapp") || {};
+    const localizedVariant = lookup(activeLocale, "examples." + exampleName) || {};
+
+    return Object.assign({}, englishBase, englishVariant, localizedBase, localizedVariant);
   }
 
   function applyExample(exampleName) {
