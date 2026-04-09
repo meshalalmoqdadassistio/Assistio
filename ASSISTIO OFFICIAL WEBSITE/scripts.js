@@ -522,7 +522,10 @@
 
     if (documentTitleTarget) {
       const key = documentTitleTarget.getAttribute("data-i18n-document-title");
-      document.title = translate(key, documentTitleTarget.textContent.trim());
+      const fallback = rememberDefault(documentTitleTarget, "defaultTitle", documentTitleTarget.textContent.trim());
+      const title = translate(key, fallback);
+      document.title = title;
+      documentTitleTarget.textContent = title;
     }
 
     formDirectionFields.forEach((field) => {
