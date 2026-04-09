@@ -317,7 +317,7 @@
   }
 
   function isStateManagedPath(pathname) {
-    return /(?:^|\/)(?:index|privacy|terms)\.html$/i.test(pathname || "") || pathname === "/" || /\/$/.test(pathname || "");
+    return /(?:^|\/)(?:index|privacy|terms|contact)\.html$/i.test(pathname || "") || pathname === "/" || /\/$/.test(pathname || "");
   }
 
   function buildStatefulHref(rawHref) {

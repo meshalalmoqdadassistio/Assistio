@@ -2,7 +2,7 @@ window.ASSISTIO_SITE_CONFIG = Object.freeze({
   siteUrl: "https://ai.assistio.co",
   bookingUrl: "https://calendar.app.google/mF4N138gHQZpTKqc6",
   contactFormEndpoint: "https://formspree.io/f/xqekolgy",
-  localeVersion: "2026-04-09-e",
+  localeVersion: "2026-04-09-f",
   localePaths: Object.freeze({
     en: "./locales/en.json",
     ro: "./locales/ro.json",
@@ -15,9 +15,9 @@ window.ASSISTIO_SITE_CONFIG = Object.freeze({
     privacyEmail: "info@assistio.co",
     legalEmail: "info@assistio.co",
     registeredAddress: Object.freeze({
-      en: "Available upon request or in a signed commercial agreement.",
-      ro: "Disponibil\u0103 la cerere sau \u00eentr-un acord comercial semnat.",
-      ar: "\u0645\u062a\u0627\u062d \u0639\u0646\u062f \u0627\u0644\u0637\u0644\u0628 \u0623\u0648 \u0636\u0645\u0646 \u0627\u062a\u0641\u0627\u0642 \u062a\u062c\u0627\u0631\u064a \u0645\u0648\u0642\u0651\u0639."
+      en: "Marzouq Al Otaibi Street, Kazma Commercial Complex, Al Jahra, Kuwait. Address number: 14709176. Civil reference: 2594329.",
+      ro: "Strada Marzouq Al Otaibi, Complexul Comercial Kazma, Al Jahra, Kuweit. Num\u0103r adres\u0103: 14709176. Referin\u021b\u0103 civil\u0103: 2594329.",
+      ar: "\u0634\u0627\u0631\u0639 \u0645\u0631\u0632\u0648\u0642 \u0627\u0644\u0639\u062a\u064a\u0628\u0649\u060c \u0645\u062c\u0645\u0639 \u0643\u0627\u0638\u0645\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u0649\u060c \u0627\u0644\u062c\u0647\u0631\u0627\u0621\u060c \u0627\u0644\u0643\u0648\u064a\u062a. \u0627\u0644\u0631\u0642\u0645 \u0627\u0644\u0622\u0644\u064a \u0644\u0644\u0639\u0646\u0648\u0627\u0646: 14709176. \u0631\u0642\u0645 \u0627\u0644\u062c\u0647\u0629 \u0627\u0644\u0645\u062f\u0646\u064a: 2594329."
     }),
     governingLaw: Object.freeze({
       en: "The law stated in the final signed agreement or other applicable mandatory law.",

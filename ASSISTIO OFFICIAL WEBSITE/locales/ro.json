@@ -11,6 +11,10 @@
     "terms": {
       "title": "Termeni și condiții | Assistio",
       "description": "Termeni și condiții pentru utilizarea website-ului Assistio, a fluxurilor de contact, a cererilor de demo și a informațiilor despre servicii."
+    },
+    "contact": {
+      "title": "Contact | Assistio",
+      "description": "Contactează Assistio pentru întrebări legale, comerciale și de implementare. Vezi entitatea juridică, adresa companiei și datele oficiale de contact."
     }
   },
   "ui": {
