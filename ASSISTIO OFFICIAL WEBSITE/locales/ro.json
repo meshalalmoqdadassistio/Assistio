@@ -194,7 +194,7 @@
       "feature4": "Human handoff and Chatwoot inbox setup",
       "feature5": "Meta channels added after verification"
     },
-    "growth": {
+    "wave": {
       "badge": "Coming soon",
       "name": "Clients 11-20",
       "price": "EUR 299 / month",
@@ -202,10 +202,10 @@
       "feature1": "Second-wave founding rate for clients 11-20",
       "feature2": "Same MVP-safe launch scope",
       "feature3": "Lead qualification summary",
-      "feature4": "Basic performance dashboard",
+      "feature4": "Lead and booking visibility",
       "feature5": "Meta channels added after verification"
     },
-    "scale": {
+    "standard": {
       "badge": "Standard plans",
       "name": "After founding access",
       "price": "Starts higher",

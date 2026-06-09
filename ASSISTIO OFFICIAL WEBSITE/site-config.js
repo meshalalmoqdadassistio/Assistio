@@ -1,5 +1,5 @@
 window.ASSISTIO_SITE_CONFIG = Object.freeze({
-  siteUrl: "https://ai.assistio.co",
+  siteUrl: "https://assistio.co",
   bookingUrl: "https://calendar.app.google/mF4N138gHQZpTKqc6",
   contactFormEndpoint: "https://formspree.io/f/xqekolgy",
   localeVersion: "2026-04-09-f",
@@ -77,7 +77,7 @@ window.ASSISTIO_SITE_CONFIG = Object.freeze({
     }),
     Object.freeze({
       id: "website",
-      href: "https://ai.assistio.co"
+      href: "https://assistio.co"
     }),
     Object.freeze({
       id: "linkedin",
