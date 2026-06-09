@@ -68,7 +68,7 @@
     }),
     website: Object.freeze({
       user: "We are on the pricing page and want to know which setup fits a clinic with two locations.",
-      assistant: "For two locations, we usually recommend a Growth setup. Do you want to automate only website chat, or WhatsApp as well?",
+      assistant: "For two locations, we usually recommend a scoped setup review. Do you want to automate only website chat, or WhatsApp after verification as well?",
       capture: "Context: pricing page, two locations",
       next: "Send the visitor into a consultative demo flow",
       step1: "A visitor asks a commercial question directly inside website chat.",
