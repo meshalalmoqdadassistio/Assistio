@@ -2,7 +2,7 @@
   "meta": {
     "home": {
       "title": "Assistio | أتمتة ذكية للمحادثات وتأهيل العملاء المحتملين",
-      "description": "تقوم Assistio بأتمتة محادثات واتساب ودردشة الموقع والبريد الإلكتروني وإنستغرام وفيسبوك لكي يرد فريقك بسرعة أكبر، ويؤهل العملاء المحتملين فورًا، ويوجه المشترين إلى الحجز."
+      "description": "Assistio starts with website lead capture, booking support, email confirmation, and a client dashboard. Instagram, Facebook, and WhatsApp are added after Meta verification."
     },
     "privacy": {
       "title": "سياسة الخصوصية | Assistio",
@@ -185,37 +185,37 @@
     "title": "خطط واضحة مصممة للإطلاق النظيف والتوسع من دون فوضى.",
     "lead": "كل خطة مبنية حول خطوة تالية بسيطة: تحجز جلسة عمل، وتؤكد الإعداد المناسب، ثم تبدأ التنفيذ بوضوح كامل.",
     "launch": {
-      "badge": "Launch",
-      "name": "Launch",
-      "price": "149 يورو / شهريًا",
-      "setup": "+ 199 يورو إعداد لمرة واحدة",
-      "feature1": "أتمتة واتساب",
-      "feature2": "قناة إضافية واحدة: دردشة الموقع أو البريد الإلكتروني",
-      "feature3": "مسار واحد للتأهيل والتوجيه",
-      "feature4": "لغة نشطة واحدة",
-      "feature5": "حتى ثلاثة مستخدمين"
+      "badge": "Founding access",
+      "name": "Clients 1-10",
+      "price": "EUR 249 / month",
+      "setup": "+ EUR 399 setup. First month total: EUR 648.",
+      "feature1": "Website AI chat and lead capture",
+      "feature2": "Booking automation and email confirmation when configured",
+      "feature3": "Lead and booking dashboard",
+      "feature4": "Human handoff and Chatwoot inbox setup",
+      "feature5": "Meta channels added after verification"
     },
     "growth": {
-      "badge": "الأكثر طلبًا",
-      "name": "Growth",
-      "price": "199 يورو / شهريًا",
-      "setup": "+ 299 يورو إعداد لمرة واحدة",
-      "feature1": "واتساب مع قناتين إضافيتين",
-      "feature2": "مساران للتأهيل أو التوجيه",
-      "feature3": "تتبع العملاء مع تسليم للتقارير",
-      "feature4": "ملخص أداء",
-      "feature5": "حتى خمسة مستخدمين"
+      "badge": "Coming soon",
+      "name": "Clients 11-20",
+      "price": "EUR 299 / month",
+      "setup": "+ EUR 499 setup. First month total: EUR 798.",
+      "feature1": "Second-wave founding rate for clients 11-20",
+      "feature2": "Same MVP-safe launch scope",
+      "feature3": "Lead qualification summary",
+      "feature4": "Basic performance dashboard",
+      "feature5": "Meta channels added after verification"
     },
     "scale": {
-      "badge": "Scale",
-      "name": "Scale",
-      "price": "279 يورو / شهريًا",
-      "setup": "+ 349 يورو إعداد لمرة واحدة",
-      "feature1": "إطلاق omnichannel عبر نقاط المبيعات والدعم",
-      "feature2": "ثلاثة مسارات أتمتة أو تحويل",
-      "feature3": "قواعد تصعيد من الذكاء الاصطناعي إلى البشر",
-      "feature4": "لغتان نشطتان",
-      "feature5": "حتى عشرة مستخدمين"
+      "badge": "Standard plans",
+      "name": "After founding access",
+      "price": "Starts higher",
+      "setup": "Founding clients keep their locked-in monthly rate.",
+      "feature1": "Standard plans start higher after founding access closes",
+      "feature2": "Scope confirmed before payment",
+      "feature3": "No hidden live-channel promise before verification",
+      "feature4": "Manual onboarding and QA before go-live",
+      "feature5": "Support and handoff setup checked before launch"
     },
     "note": "لا يلزم أي التزام للحجز. نستخدم العرض التجريبي لتوصية المزيج الصحيح من القنوات ومنطق التأهيل ونطاق التنفيذ المناسب لعملك."
   },
@@ -225,7 +225,7 @@
     "lead": "الهدف بسيط: يجب أن تبدو الخطوة التالية واضحة ومنخفضة الاحتكاك وواقعية تشغيليًا لفريقك.",
     "q1": {
       "question": "ما القنوات التي يمكن لـ Assistio أتمتتها؟",
-      "answer": "يمكن إعداد Assistio لواتساب ودردشة الموقع والبريد الإلكتروني وإنستغرام وفيسبوك بحسب خطتك ونطاق التنفيذ."
+      "answer": "Website chat is the first managed-beta channel. Instagram, Facebook, and WhatsApp are included after Meta verification, and we manage the setup process."
     },
     "q2": {
       "question": "كم يستغرق الإعداد عادة؟",
@@ -309,7 +309,7 @@
     "socials": {
       "whatsapp": "واتساب",
       "email": "البريد الإلكتروني",
-    "bookDemo": "احجز ديمو",
+      "bookDemo": "احجز ديمو",
       "website": "الموقع",
       "linkedin": "لينكدإن",
       "instagram": "إنستغرام",

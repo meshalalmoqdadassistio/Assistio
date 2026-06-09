@@ -2,7 +2,7 @@
   "meta": {
     "home": {
       "title": "Assistio | Automatizare AI pentru conversații și leaduri mai bine calificate",
-      "description": "Assistio automatizează conversațiile din WhatsApp, chatul de pe site, email, Instagram și Facebook pentru ca echipa ta să răspundă mai rapid, să califice leadurile instant și să trimită cumpărătorii spre programare."
+      "description": "Assistio starts with website lead capture, booking support, email confirmation, and a client dashboard. Instagram, Facebook, and WhatsApp are added after Meta verification."
     },
     "privacy": {
       "title": "Politica de confidențialitate | Assistio",
@@ -184,37 +184,37 @@
     "title": "Planuri clare, construite să lanseze curat și să se extindă fără haos.",
     "lead": "Fiecare plan este construit în jurul unui pas următor simplu: programezi o sesiune de lucru, confirmi setup-ul potrivit și intri în implementare cu claritate.",
     "launch": {
-      "badge": "Launch",
-      "name": "Launch",
-      "price": "149 EUR / lună",
-      "setup": "+ 199 EUR setup unic",
-      "feature1": "Automatizare WhatsApp",
-      "feature2": "Un canal în plus: chat pe site sau email",
-      "feature3": "Un flux de calificare și rutare",
-      "feature4": "O limbă activă",
-      "feature5": "Până la trei utilizatori"
+      "badge": "Founding access",
+      "name": "Clients 1-10",
+      "price": "EUR 249 / month",
+      "setup": "+ EUR 399 setup. First month total: EUR 648.",
+      "feature1": "Website AI chat and lead capture",
+      "feature2": "Booking automation and email confirmation when configured",
+      "feature3": "Lead and booking dashboard",
+      "feature4": "Human handoff and Chatwoot inbox setup",
+      "feature5": "Meta channels added after verification"
     },
     "growth": {
-      "badge": "Cel mai ales",
-      "name": "Growth",
-      "price": "199 EUR / lună",
-      "setup": "+ 299 EUR setup unic",
-      "feature1": "WhatsApp plus încă două canale",
-      "feature2": "Două fluxuri de calificare sau rutare",
-      "feature3": "Urmărire leaduri cu handoff către raportare",
-      "feature4": "Rezumat de performanță",
-      "feature5": "Până la cinci utilizatori"
+      "badge": "Coming soon",
+      "name": "Clients 11-20",
+      "price": "EUR 299 / month",
+      "setup": "+ EUR 499 setup. First month total: EUR 798.",
+      "feature1": "Second-wave founding rate for clients 11-20",
+      "feature2": "Same MVP-safe launch scope",
+      "feature3": "Lead qualification summary",
+      "feature4": "Basic performance dashboard",
+      "feature5": "Meta channels added after verification"
     },
     "scale": {
-      "badge": "Scale",
-      "name": "Scale",
-      "price": "279 EUR / lună",
-      "setup": "+ 349 EUR setup unic",
-      "feature1": "Rollout omnichannel pentru puncte de contact din vânzări și suport",
-      "feature2": "Trei fluxuri de automatizare sau handoff",
-      "feature3": "Reguli de escaladare AI către om",
-      "feature4": "Două limbi active",
-      "feature5": "Până la zece utilizatori"
+      "badge": "Standard plans",
+      "name": "After founding access",
+      "price": "Starts higher",
+      "setup": "Founding clients keep their locked-in monthly rate.",
+      "feature1": "Standard plans start higher after founding access closes",
+      "feature2": "Scope confirmed before payment",
+      "feature3": "No hidden live-channel promise before verification",
+      "feature4": "Manual onboarding and QA before go-live",
+      "feature5": "Support and handoff setup checked before launch"
     },
     "note": "Nu este nevoie de niciun angajament pentru programare. Folosim demo-ul ca să recomandăm mixul potrivit de canale, logica de calificare și scope-ul de rollout pentru afacerea ta."
   },
@@ -224,7 +224,7 @@
     "lead": "Scopul este simplu: următorul pas trebuie să fie clar, cu fricțiune minimă și realist din punct de vedere operațional pentru echipa ta.",
     "q1": {
       "question": "Ce canale poate automatiza Assistio?",
-      "answer": "Assistio poate fi configurat pentru WhatsApp, chat pe site, email, Instagram și Facebook, în funcție de planul ales și de scope-ul rollout-ului."
+      "answer": "Website chat is the first managed-beta channel. Instagram, Facebook, and WhatsApp are included after Meta verification, and we manage the setup process."
     },
     "q2": {
       "question": "Cât durează de obicei setup-ul?",
@@ -308,7 +308,7 @@
     "socials": {
       "whatsapp": "WhatsApp",
       "email": "Email",
-    "bookDemo": "Programează demo",
+      "bookDemo": "Programează demo",
       "website": "Website",
       "linkedin": "LinkedIn",
       "instagram": "Instagram",
